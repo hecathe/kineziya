@@ -8,8 +8,13 @@ html
         link(rel="stylesheet" href="app/styles/app.min.css")
 
     body
-        include common/header.pug
+        .wrapper
+            include common/header.pug
 
-        block content
+            .content
+                block content
 
-        include common/footer.pug
+            include common/footer.pug
+
+        script(src="app/scripts/swiper-bundle.min.js")
+        script(src="app/scripts/swiper.js")

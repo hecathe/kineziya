@@ -1,0 +1,17 @@
+extends ../template
+
+block variables
+  - var title = 'Направление'
+
+block content
+  main.main
+    section.referral
+      .referral__container.container
+        .referral__wrap
+          h1.referral__title.title Здоровая спина
+          p.referral__text Происходит естественное<br> восстановление организма за счёт<br> активированных внутренних ресурсов
+        
+          .referral__link-wrap
+            a.referral__link.button.button--background(href="#") Записаться на первичный приём
+            span.referral__old-price 2 000 ₽
+            span.referral__new-price 1 000 ₽

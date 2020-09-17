@@ -1,0 +1,40 @@
+@mixin nav-link {
+    font-family: "Circe", san-serif;
+    color: $color--black;
+
+    &:hover {
+        color: $color--header-col;
+        border-bottom: 1px solid $color--header-col;
+        transition: 0.2s;
+    }
+
+    &:active {
+        font-weight: bold;
+    }
+}
+
+@mixin font-16 {
+    font-size: 16px;
+    line-height: 125%;
+}
+
+@mixin font-18 {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+//blocks mixin
+
+@mixin list-img {
+    position: relative;
+    width: 555px;
+    height: 370px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: $color--header-col;
+}
+
+@mixin list-caption {
+    color: $color--header-col;
+    margin-bottom: 5px;
+}

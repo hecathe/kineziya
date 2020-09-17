@@ -4,8 +4,11 @@
     letter-spacing: 0.0015em;
 }
 
+.contacts__subtitle {
+    margin-bottom: 20px;
+}
+
 .contacts__text {
-    margin-top: 20px;
     margin-bottom: 60px;
 }
 
@@ -89,6 +92,7 @@
 .contacts__map {
     max-width: 749px;
     height: 493px;
+    background-color: $color-blue3;
 }
 
 .contacts-list {

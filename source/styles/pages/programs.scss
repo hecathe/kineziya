@@ -1,0 +1,108 @@
+.programs-presentation {
+    height: 620px;
+    background-color: $color-pp-background;
+    background-image: url("../images/pp-background.jpg");
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+.programs-presentation__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.programs-presentation__wrap {
+    margin-left: 50%;
+}
+
+.programs-presentation__title {
+    margin-bottom: 20px;
+}
+
+.programs-presentation__text {
+    font-family: "Circe", san-serif;
+    margin-bottom: 40px;
+}
+
+.programs-presentation__list {
+    display: flex;
+}
+
+.programs-presentation__item {
+    &:not(:last-of-type) {
+        margin-right: 10px;
+    }
+}
+
+.programs-presentation__link {
+    color: $color--black;
+    background-color: $color-lightgrey;
+    padding: 10px 20px;
+}
+
+//gallery
+
+.gallery {
+    margin-bottom: 150px;
+
+    .swiper-container {
+        overflow: visible;
+    }
+}
+
+.gallery__list {
+    display: flex;
+}
+
+.gallery__item {
+    &.swiper-slide {
+        width: auto;
+        flex-shrink: 1;
+    }
+}
+
+.gallery__img-wrap {
+    @include list-img;
+}
+
+.gallery__caption {
+    @include list-caption;
+}
+
+.gallery__desc {
+    font-weight: 200;
+}
+
+//specialist-block
+
+.specialists {
+    margin-bottom: 150px;
+}
+
+.specialists__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.specialists__number {
+    font-family: "Circe", san-serif;
+    font-size: 36px;
+    line-height: 53px;
+    color: $color--header-col;
+    margin-left: 13px;
+}
+
+.specialists__link {
+    margin: 40px auto 0;
+}
+
+//reviews
+
+.programs-review {
+    margin-bottom: 148px;
+}
+
+.programs-discounts {
+    margin-bottom: 200px;
+}

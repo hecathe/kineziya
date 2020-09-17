@@ -1,8 +1,13 @@
+.main {
+    margin-bottom: 200px;
+}
+
 .presentation {
     height: 890px;
     font-family: "Circe", san-serif;
     font-weight: normal;
     color: $color-white;
+    background-color: $color--header-col;
     background-image: url("../images/main-background.jpg");
     background-repeat: repeat;
 }
@@ -95,8 +100,4 @@
 
 .reviews-wrap {
     margin-bottom: 204px;
-}
-
-.contacts-wrap {
-    margin-bottom: 200px;
 }

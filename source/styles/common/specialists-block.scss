@@ -1,0 +1,59 @@
+.specialists-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 40px;
+}
+
+.specialists-list__item {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content;
+    column-gap: 20px;
+}
+
+.specialists-list__img-wrap {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    width: 210px;
+    height: 195px;
+    border-radius: 10px;
+    background-color: $color--header-col;
+}
+
+.specialists-list__wrap {
+    align-self: center;
+}
+
+.specialists-list__caption {
+    font-family: "Circe", san-serif;
+    color: $color--blue;
+}
+
+.specialists-list__text {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.0015em;
+
+    &:first-of-type {
+        margin: 5px 0;
+    }
+}
+
+.specialists-list__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.specialists-list__link {
+    width: 206px;
+    height: 47px;
+}
+
+.specialists-list__price-info {
+    @include font-18;
+    margin-left: 20px;
+}

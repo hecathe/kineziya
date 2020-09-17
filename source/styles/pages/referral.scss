@@ -1,0 +1,43 @@
+.referral {
+    height: 626px;
+    background-color: $color-white;
+    background-image: url("../images/referral-background.jpg");
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+.referral__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.referral__wrap {
+    margin-left: 50%;
+}
+
+.referral__text {
+    font-family: "Circe", san-serif;
+    font-size: 24px;
+    line-height: 125%;
+}
+
+.referral__link-wrap {
+    display: flex;
+}
+
+.referral__link {
+    width: 325px;
+    height: 50px;
+}
+
+.referral__old-price {
+    font-weight: 300;
+    @include font-18;
+    text-decoration: line-through;
+}
+
+.referral__new-price {
+    @include font-18;
+    color: $color--blue;
+}

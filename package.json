@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/hecathe/kineziya/issues"
   },
-  "homepage": "https://github.com/hecathe/kineziya#readme"
+  "homepage": "https://github.com/hecathe/kineziya#readme",
+  "dependencies": {
+    "swiper": "^6.2.0"
+  }
 }

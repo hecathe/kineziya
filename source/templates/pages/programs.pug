@@ -1,0 +1,66 @@
+extends ../template
+
+block variables
+  - var title = 'Все программы'
+
+block content
+    main.main
+        section.programs-presentation
+            .programs-presentation__container.container
+                .programs-presentation__wrap
+                    h1.programs-presentation__title.title Вспомните себя —<br> забудьте о боли!
+                    p.programs-presentation__text Ознакомьтесь с нашими<br> оздоровительными программами
+                    ul.programs-presentation__list
+                        li.programs-presentation__item
+                            a.programs-presentation__link.button(href="#") Здоровая спина
+                        li.programs-presentation__item
+                            a.programs-presentation__link.button(href="#") Управление весом
+                        li.programs-presentation__item
+                            a.programs-presentation__link.button(href="#") Велнес
+
+        .programs-wrap
+            include ../common/programs-block.pug
+
+        section.gallery
+            .container
+                h2.gallery__subtitle.subtitle Фотографии центра
+                .swiper-container
+                    ul.gallery__list.swiper-wrapper
+                        li.gallery__item.swiper-slide
+                            .gallery__img-wrap
+                                img.gallery__img(src="app/images/g-image1.jpg" width="567" height="378" alt="Массажный кабинет")
+                            h4.gallery__caption.caption Массажный кабинет
+                            p.gallery__desc Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия
+
+                        li.gallery__item.swiper-slide
+                            .gallery__img-wrap
+                                img.gallery__img(src="app/images/g-image2.jpg" width="589" height="370" alt="Кабинет ЛФК")
+                            h4.gallery__caption.caption Кабинет ЛФК
+                            p.gallery__desc Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия
+
+                        li.gallery__item.swiper-slide
+                            .gallery__img-wrap
+                                img.gallery__img(src="app/images/g-image3.jpg" width="558" height="372" alt="Зал функциональных тренировок")
+                            h4.gallery__caption.caption Зал функциональных тренировок
+                            p.gallery__desc Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия
+                    
+                    .swiper-button-prev
+                    .swiper-button-next
+
+        section.specialists
+            .specialists__container.container
+                h2.specialists__subtitle.subtitle Наши специалисты
+                span.specialists__number 19
+
+                include ../common/specialists-block.pug
+
+                a.specialists__link.button.button--border(href="#") Показать всех врачей
+
+        .programs-review
+            include ../common/reviews.pug
+
+        .programs-discounts
+            include ../common/discounts.pug
+
+        .programs-contacts
+            include ../common/contacts.pug

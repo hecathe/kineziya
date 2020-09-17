@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>Главная</title>
+    <title>Все программы</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="app/styles/app.min.css"/>
   </head>
@@ -29,34 +29,16 @@
       </header>
       <div class="content">
         <main class="main">
-          <section class="presentation">
-            <div class="presentation__container container">
-              <div class="presentation__wrap">
-                <p class="presentation__text">Комплексный подход к здоровью</p>
-                <h1 class="presentation__title title">Центр движения «Кинезия»</h1>
-                <p class="presentation__slogan">Движение = лечение</p><a class="presentation__button button button--background" href="#">Болит?</a>
-              </div>
-              <button class="presentation__btn-video btn-video" type="button"><svg class="presentation__svg" width="36" height="42" viewBox="0 0 36 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M35.1685 20.9999L0.415983 41.0642L0.415985 0.935507L35.1685 20.9999Z" fill="white"/>
-</svg>
-              </button>
-            </div>
-          </section>
-          <section class="about-company">
-            <div class="about-company__container container">
-              <div class="about-company__article">
-                <p class="about-company__text">Центр кинезиотерапии «Кинезия» — это альтернатива обезболивающим и операциям и часто единственный работающий метод забыть о боли!</p>
-                <p class="about-company__text">К нам обращаются после десятков специалистов, килограммов таблеток, мазей, уколов и шаманских ритуалов. Пациент ищет простой и быстрый способ избавления от боли. Обезболит укол — порядок, сделали массаж помогло, но... боль возвращается!</p>
-                <h3 class="about-company__caption">Выявить первопричину — залог успешного лечения.</h3>
-                <p class="about-company__text">Кинезиотерапия — метод активного лечения через движение. Реабилитация проходит с использованием тренажёров и разнообразных форм и техник движения.</p>
-                <p class="about-company__text">Это совместный труд пациента, врача и тренера! Это сложно, это не для всех. Но у тех, кто проходит путь, боли уходят, и человек возвращается к активному образу жизни.</p>
-                <p class="about-company__text">На диагностике врач, кроме снимков и осмотра, оценивает опорно-двигательный аппарат через нагрузочные тесты, проводимые на специальном оборудовании в движении, что даёт возможность установить первопричину состояния. Также анализируются лабораторные исследования крови, гормональный статус.</p>
-                <h3 class="about-company__caption">Из массива полученных данных составляется индивидуальная комплексная программа:</h3>
-                <p class="about-company__text">— Нормализация показателей крови с помощью коррекции питания, восполнение жизненно важных микроэлементов и витаминов.</p>
-                <p class="about-company__text">— Самые эффективные приёмы из различных методик от ЛФК до пилатеса, направленные на укрепление мышц, расслабления и восстановления, а также мягкие мануальные техники и элементы массажа.</p>
-              </div>
-              <div class="about-company__wrap">
-                <p class="about-company__text">Записаться на консультацию<br> Вы можете по телефону или через форму на сайте</p><a class="about-company__link" href="tel:+78124072121">+7 (812) 407-21-21</a><a class="about-company__button button button--background" href="#">Запись на консультацию</a>
+          <section class="programs-presentation">
+            <div class="programs-presentation__container container">
+              <div class="programs-presentation__wrap">
+                <h1 class="programs-presentation__title title">Вспомните себя —<br> забудьте о боли!</h1>
+                <p class="programs-presentation__text">Ознакомьтесь с нашими<br> оздоровительными программами</p>
+                <ul class="programs-presentation__list">
+                  <li class="programs-presentation__item"><a class="programs-presentation__link button" href="#">Здоровая спина</a></li>
+                  <li class="programs-presentation__item"><a class="programs-presentation__link button" href="#">Управление весом</a></li>
+                  <li class="programs-presentation__item"><a class="programs-presentation__link button" href="#">Велнес</a></li>
+                </ul>
               </div>
             </div>
           </section>
@@ -85,7 +67,84 @@
               </div>
             </section>
           </div>
-          <div class="reviews-wrap">
+          <section class="gallery">
+            <div class="container">
+              <h2 class="gallery__subtitle subtitle">Фотографии центра</h2>
+              <div class="swiper-container">
+                <ul class="gallery__list swiper-wrapper">
+                  <li class="gallery__item swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="app/images/g-image1.jpg" width="567" height="378" alt="Массажный кабинет"/></div>
+                    <h4 class="gallery__caption caption">Массажный кабинет</h4>
+                    <p class="gallery__desc">Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия</p>
+                  </li>
+                  <li class="gallery__item swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="app/images/g-image2.jpg" width="589" height="370" alt="Кабинет ЛФК"/></div>
+                    <h4 class="gallery__caption caption">Кабинет ЛФК</h4>
+                    <p class="gallery__desc">Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия</p>
+                  </li>
+                  <li class="gallery__item swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="app/images/g-image3.jpg" width="558" height="372" alt="Зал функциональных тренировок"/></div>
+                    <h4 class="gallery__caption caption">Зал функциональных тренировок</h4>
+                    <p class="gallery__desc">Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия</p>
+                  </li>
+                </ul>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </section>
+          <section class="specialists">
+            <div class="specialists__container container">
+              <h2 class="specialists__subtitle subtitle">Наши специалисты</h2><span class="specialists__number">19</span>
+              <ul class="specialists-list">
+                <li class="specialists-list__item">
+                  <div class="specialists-list__img-wrap"><img src="app/images/s-image1.jpg" alt="Невролог-вертебролог"/></div>
+                  <div class="specialists-list__wrap">
+                    <h4 class="specialists-list__caption">Алексеев Валерий Игнатьевич</h4>
+                    <p class="specialists-list__text">Невролог-вертебролог</p>
+                    <p class="specialists-list__text">Стаж 12 лет</p>
+                  </div>
+                  <div class="specialists-list__wrapper"><a class="specialists-list__link button button--border" href="#">Записаться на приём</a>
+                    <p class="specialists-list__price-info">Консультация 2 000 ₽ </p>
+                  </div>
+                </li>
+                <li class="specialists-list__item">
+                  <div class="specialists-list__img-wrap"><img src="app/images/s-image2.jpg" alt="Невролог-вертебролог"/></div>
+                  <div class="specialists-list__wrap">
+                    <h4 class="specialists-list__caption">Алексеев Валерий Игнатьевич</h4>
+                    <p class="specialists-list__text">Невролог-вертебролог</p>
+                    <p class="specialists-list__text">Стаж 12 лет</p>
+                  </div>
+                  <div class="specialists-list__wrapper"><a class="specialists-list__link button button--border" href="#">Записаться на приём</a>
+                    <p class="specialists-list__price-info">Консультация 2 000 ₽ </p>
+                  </div>
+                </li>
+                <li class="specialists-list__item">
+                  <div class="specialists-list__img-wrap"><img src="app/images/s-image2.jpg" alt="Невролог-вертебролог"/></div>
+                  <div class="specialists-list__wrap">
+                    <h4 class="specialists-list__caption">Алексеев Валерий Игнатьевич</h4>
+                    <p class="specialists-list__text">Невролог-вертебролог</p>
+                    <p class="specialists-list__text">Стаж 12 лет</p>
+                  </div>
+                  <div class="specialists-list__wrapper"><a class="specialists-list__link button button--border" href="#">Записаться на приём</a>
+                    <p class="specialists-list__price-info">Консультация 2 000 ₽ </p>
+                  </div>
+                </li>
+                <li class="specialists-list__item">
+                  <div class="specialists-list__img-wrap"><img src="app/images/s-image1.jpg" alt="Невролог-вертебролог"/></div>
+                  <div class="specialists-list__wrap">
+                    <h4 class="specialists-list__caption">Алексеев Валерий Игнатьевич</h4>
+                    <p class="specialists-list__text">Невролог-вертебролог</p>
+                    <p class="specialists-list__text">Стаж 12 лет</p>
+                  </div>
+                  <div class="specialists-list__wrapper"><a class="specialists-list__link button button--border" href="#">Записаться на приём</a>
+                    <p class="specialists-list__price-info">Консультация 2 000 ₽ </p>
+                  </div>
+                </li>
+              </ul><a class="specialists__link button button--border" href="#">Показать всех врачей</a>
+            </div>
+          </section>
+          <div class="programs-review">
             <section class="reviews">
               <div class="container">
                 <h2 class="reviews__subtitle subtitle">Отзывы</h2>
@@ -134,7 +193,44 @@
               </div>
             </section>
           </div>
-          <div class="contacts-wrap">
+          <div class="programs-discounts">
+            <section class="discounts">
+              <div class="discounts__container container">
+                <h2 class="discounts__subtitle subtitle">Текущие акции</h2>
+                <div class="discounts__link-wrap"><a class="discounts__link" href="#">Смотреть все акции</a><svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.5303 6.53033C20.8232 6.23744 20.8232 5.76256 20.5303 5.46967L15.7574 0.696699C15.4645 0.403806 14.9896 0.403806 14.6967 0.696699C14.4038 0.989593 14.4038 1.46447 14.6967 1.75736L18.9393 6L14.6967 10.2426C14.4038 10.5355 14.4038 11.0104 14.6967 11.3033C14.9896 11.5962 15.4645 11.5962 15.7574 11.3033L20.5303 6.53033ZM0 6.75H20V5.25H0V6.75Z" fill="#0067CA"/>
+</svg>
+                </div>
+                <ul class="discounts__list discounts-list">
+                  <li class="discounts-list__item">
+                    <div class="discounts-list__img-wrap"><img class="discounts-list__img" src="app/images/d-image1.jpg" alt="Скидка 50% на спортивный массаж"/></div>
+                    <p class="discounts-list__date">до 12.02.2019 г.</p>
+                    <h4 class="discounts-list__caption caption">Скидка 50% на спортивный массаж</h4>
+                    <div class="discounts-list__links-wrapper"><a class="discounts-list__link button button--background" href="#">Записаться</a><a class="discounts-list__link-more" href="#">Подробнее</a></div>
+                  </li>
+                  <li class="discounts-list__item">
+                    <div class="discounts-list__img-wrap"><img class="discounts-list__img" src="app/images/d-image2.jpg" alt="Скидка 50% на спортивный массаж"/></div>
+                    <p class="discounts-list__date">до 12.02.2019 г.</p>
+                    <h4 class="discounts-list__caption caption">Скидка 50% на спортивный массаж</h4>
+                    <div class="discounts-list__links-wrapper"><a class="discounts-list__link button button--background" href="#">Записаться</a><a class="discounts-list__link-more" href="#">Подробнее</a></div>
+                  </li>
+                  <li class="discounts-list__item">
+                    <div class="discounts-list__img-wrap"><img class="discounts-list__img" src="app/images/d-image1.jpg" alt="Скидка 50% на спортивный массаж"/></div>
+                    <p class="discounts-list__date">до 12.02.2019 г.</p>
+                    <h4 class="discounts-list__caption caption">Скидка 50% на спортивный массаж</h4>
+                    <div class="discounts-list__links-wrapper"><a class="discounts-list__link button button--background" href="#">Записаться</a><a class="discounts-list__link-more" href="#">Подробнее</a></div>
+                  </li>
+                  <li class="discounts-list__item">
+                    <div class="discounts-list__img-wrap"><img class="discounts-list__img" src="app/images/d-image2.jpg" alt="Скидка 50% на спортивный массаж"/></div>
+                    <p class="discounts-list__date">до 12.02.2019 г.</p>
+                    <h4 class="discounts-list__caption caption">Скидка 50% на спортивный массаж</h4>
+                    <div class="discounts-list__links-wrapper"><a class="discounts-list__link button button--background" href="#">Записаться</a><a class="discounts-list__link-more" href="#">Подробнее</a></div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="programs-contacts">
             <section class="contacts">
               <div class="contacts__container container">
                 <div class="contacts__form-wrap">

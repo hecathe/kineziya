@@ -4,33 +4,10 @@ $color-blue2: #025EB7;
 $color-blue3: #3490E9;
 $color-white: #FFFFFF;
 $color--header-col: #9B6044;
+$color-pp-background: #CACACC;
+$color-lightgrey: #DEE2EB;
 
 $color-grey-rgba-50: rgba(56, 39, 25, 0.5);
-
-@mixin nav-link {
-    font-family: "Circe", san-serif;
-    color: $color--black;
-
-    &:hover {
-        color: $color--header-col;
-        border-bottom: 1px solid $color--header-col;
-        transition: 0.2s;
-    }
-
-    &:active {
-        font-weight: bold;
-    }
-}
-
-@mixin font-16 {
-    font-size: 16px;
-    line-height: 125%;
-}
-
-@mixin font-18 {
-    font-size: 18px;
-    line-height: 27px;
-}
 
 
 * {
@@ -38,11 +15,11 @@ $color-grey-rgba-50: rgba(56, 39, 25, 0.5);
 }
 
 body {
-    min-height: 100vh;
     font-family: "Spectral", serif;
     font-size: 20px;
     line-height: 125%;
     color: $color--black;
+    overflow-x: hidden;
 }
 
 img {
@@ -62,6 +39,17 @@ a {
 p, h1, h2, h3, h4 {
     padding: 0;
     margin: 0;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1;
 }
 
 .container {
@@ -139,6 +127,9 @@ p, h1, h2, h3, h4 {
     font-weight: normal;
     font-size: 48px;
     line-height: 125%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .caption {
@@ -152,6 +143,8 @@ p, h1, h2, h3, h4 {
 }
 
 @import './common/normalize';
+@import './common/swiper-bundle.min';
+@import './common/mixins';
 @import './common/fonts';
 
 @import './common/header';
@@ -160,6 +153,10 @@ p, h1, h2, h3, h4 {
 @import './common/programs-block';
 @import './common/reviews';
 @import './common/contacts';
+@import './common/specialists-block';
+@import './common/discounts';
 
 @import './pages/index';
 @import './pages/main';
+@import './pages/programs';
+@import './pages/referral';

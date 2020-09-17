@@ -1,21 +1,29 @@
+.reviews {
+    .swiper-container {
+        overflow: visible;
+    }
+}
+
 .reviews__list {
     display: flex;
 }
 
 .reviews__item {
-    
-    &:not(:last-of-type) {
-        margin-right: 20px;
+    &.swiper-slide {
+        width: auto;
     }
 }
 
 .reviews__img-wrap {
-    position: relative;
-    width: 555px;
-    height: 370px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: $color--header-col;
+    @include list-img;
+}
+
+.reviews__caption {
+    @include list-caption;
+}
+
+.reviews__desc {
+    font-weight: 200;
 }
 
 .reviews__btn-wrap {
