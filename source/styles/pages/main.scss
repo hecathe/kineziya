@@ -1,0 +1,102 @@
+.presentation {
+    height: 890px;
+    font-family: "Circe", san-serif;
+    font-weight: normal;
+    color: $color-white;
+    background-image: url("../images/main-background.jpg");
+    background-repeat: repeat;
+}
+
+.presentation__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation__title {
+    margin: 20px 0;
+}
+
+.presentation__slogan {
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.presentation__button {
+    width: 210px;
+    min-height: 50px;
+    margin-top: 60px;
+}
+
+//about-company
+
+.about-company {
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.about-company__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-company__article {
+    width: 815px;
+}
+
+.about-company__wrap {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    width: 400px;
+    height: 335px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+
+    .about-company__text {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    .about-company__link {
+        font-family: "Circe", sans-serif;
+        font-size: 24px;
+        line-height: 125%;
+        color: $color--black;
+    }
+}
+
+.about-company__text {
+    font-size: 24px;
+    line-height: 125%;
+
+    &:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
+}
+
+.about-company__caption {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    margin-bottom: 30px;
+}
+
+//programs-block
+
+.programs-wrap {
+    margin-bottom: 150px;
+}
+
+.reviews-wrap {
+    margin-bottom: 204px;
+}
+
+.contacts-wrap {
+    margin-bottom: 200px;
+}

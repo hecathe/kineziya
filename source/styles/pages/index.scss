@@ -1,0 +1,8 @@
+.map {
+    margin-top: 100px;
+}
+
+.map-table__link {
+    @include nav-link;
+    font-size: 48px;
+}

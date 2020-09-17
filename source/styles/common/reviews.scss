@@ -1,0 +1,30 @@
+.reviews__list {
+    display: flex;
+}
+
+.reviews__item {
+    
+    &:not(:last-of-type) {
+        margin-right: 20px;
+    }
+}
+
+.reviews__img-wrap {
+    position: relative;
+    width: 555px;
+    height: 370px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: $color--header-col;
+}
+
+.reviews__btn-wrap {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}

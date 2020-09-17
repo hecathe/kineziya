@@ -1,0 +1,15 @@
+.programs-block__subtitle {
+    margin-bottom: 40px;
+}
+
+.programs-block__list {
+    display: flex;
+}
+
+.programs-block__item {
+    text-align: center;
+
+    &:not(:last-of-type) {
+        margin-right: 20px;
+    }
+}

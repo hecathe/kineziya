@@ -1,0 +1,38 @@
+section.contacts
+    .contacts__container.container
+        .contacts__form-wrap
+            h2.contacts__subtitle.subtitle Свяжитесь с нами
+            p.contacts__text Если вы заболели или хотите оставить обратную связь о нашей работе, заполните форму ниже.
+
+            form.contacts__form(action="#" method="post")
+                label.contacts__label Ваше имя
+                    input.contacts__input(type="text" placeholder="Имя")
+                label.contacts__label
+                    input.contacts__input(type="tel" placeholder="Телефон")
+                
+                button.contacts__select-btn(type="button") Проблематика
+
+                ul.contact__select-list.select-list
+                    li.select-list__item Проблема
+                    li.select-list__item Проблема
+                    li.select-list__item Проблема
+
+                textarea.contacts__comment-field(name="comment", cols="20", rows="1" placeholder="Сообщение")
+
+                p.contacts__info Отправляя заявку, вы даёте согласие на обработку данных.
+
+                button.contacts__button.button.button--background(type="submit") Отправить заявку
+
+        .contacts__map-wrap
+            .contacts__map
+                img(src="app/images/map.png" width="749" height="493" alt="«Кинезия», центр движения  г. Санкт-Петербург, ул. Рентгена, д. 19")
+            ul.contacts__list.contacts-list
+                li.contacts-list__item
+                    h4.contacts-list__caption «Кинезия», центр движения 
+                    p.contacts-list__text г. Санкт-Петербург,<br> ул. Рентгена, д. 19
+                li.contacts-list__item
+                    h4.contacts-list__caption +7 (812) 748-35-95
+                    p.contacts-list__text Приятный человеческий<br> голос на проводе
+                li.contacts-list__item
+                    h4.contacts-list__caption info@kinesia.ru
+                    p.contacts-list__text Пишите —<br> мы ответим
