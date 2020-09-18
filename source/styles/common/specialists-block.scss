@@ -28,7 +28,7 @@
 }
 
 .specialists-list__caption {
-    font-family: "Circe", san-serif;
+    font-family: "Circe", sans-serif;
     color: $color--blue;
 }
 
@@ -54,6 +54,7 @@
 }
 
 .specialists-list__price-info {
+    font-family: "Circe", sans-serif;
     @include font-18;
     margin-left: 20px;
 }

@@ -15,3 +15,74 @@ block content
             a.referral__link.button.button--background(href="#") Записаться на первичный приём
             span.referral__old-price 2 000 ₽
             span.referral__new-price 1 000 ₽
+
+    section.about-program
+      .about-program__container.container
+        h2.about-program__subtitle.subtitle О программе
+        .about-program__wrapper
+          .about-program__text-wrap
+            p.about-program__text Кинезиотерапия — метод активного лечения через движение. Реабилитация проходит с использованием тренажёров и разнообразных форм и техник движения.
+            p.about-program__text Это совместный труд пациента, врача и тренера! Это сложно, это не для всех. Но у тех, кто проходит путь, боли уходят, и человек возвращается к активному образу жизни.
+            p.about-program__text На диагностике врач, кроме снимков и осмотра, оценивает опорно-двигательный аппарат через нагрузочные тесты, проводимые на специальном оборудовании в движении, что даёт возможность установить первопричину состояния. Также<br> анализируются лабораторные исследования крови, гормональный статус.
+            p.about-program__text Центр кинезиотерапии «Кинезия» — это альтернатива обезболивающим и операциям и часто единственный работающий метод забыть о боли!
+            p.about-program__text Кинезиотерапия — метод активного лечения через движение. Реабилитация проходит с использованием тренажёров и разнообразных форм и техник движения.
+            p.about-program__text Это совместный труд пациента, врача и тренера! Это сложно, это не для всех. Но у тех, кто проходит путь, боли уходят, и человек возвращается к активному образу жизни.
+            p.about-program__text На диагностике врач, кроме снимков и осмотра, оценивает опорно-двигательный аппарат через нагрузочные тесты, проводимые на специальном оборудовании в движении, что даёт возможность установить первопричину состояния. Также<br> анализируются лабораторные исследования крови, гормональный статус.
+            p.about-program__text Центр кинезиотерапии «Кинезия» — это альтернатива обезболивающим и операциям и часто единственный работающий метод забыть о боли!
+
+          .about-program__video-wrap
+            ul.about-program__list.video-list
+              li.video-list__item
+                .video-list__img-wrap
+                  img.video-list__img(src="app/images/rb-image3.jpg" width="558" height="372" alt="Марина, 28 лет")
+                  .video-list__btn-wrap
+                    include ../common/btn-video.pug
+                h4.video-list__caption.caption Марина, 28 лет
+                p.video-list__desc Болит спина от неудобного стула
+              li.video-list__item
+                .video-list__img-wrap
+                  img.video-list__img(src="app/images/rb-image3.jpg" width="558" height="372" alt="Марина, 28 лет")
+                  .video-list__btn-wrap
+                    include ../common/btn-video.pug
+                h4.video-list__caption.caption Марина, 28 лет
+                p.video-list__desc Болит спина от неудобного стула
+
+    section.referral-specialists
+      .referral-specialists__container.container
+        h2.referral-specialists__subtitle.subtitle Первичный приём невролога-вертебролога
+
+        .referral-specialists__wrap
+          include ../common/specialists-block.pug
+
+        .referral-specialists__text-wrap
+          p.referral-specialists__text Врач-невролог (невропатолог) занимается профилактикой, лечением и диагностикой болезней центральной и периферической нервной системы, некоторых патологий опорно-двигательного аппарата, которые влияют на функционирование ЦНС. Порядка 30% всех обращений к этому специалисту – заболевания периферической нервной системы: плекситы, невриты, радикулит, остеохондроз и др.
+          p.referral-specialists__text Врач-невролог (невропатолог) занимается профилактикой, лечением и диагностикой болезней центральной и периферической нервной системы, некоторых патологий опорно-двигательного аппарата, которые влияют на функционирование ЦНС. Порядка 30% всех обращений к этому специалисту – заболевания периферической нервной системы: плекситы, невриты, радикулит, остеохондроз и др.
+          p.referral-specialists__text Врач-невролог (невропатолог) занимается профилактикой, лечением и диагностикой болезней центральной и периферической нервной системы, некоторых патологий опорно-двигательного аппарата, которые влияют на функционирование ЦНС. Порядка 30% всех обращений к этому специалисту – заболевания периферической нервной системы: плекситы, невриты, радикулит, остеохондроз и др.
+
+    section.plan
+      .plan__container.container
+        h2.plan__subtitle.subtitle Составление индивидуального плана лечения
+
+        ul.plan__list
+          li.plan__item
+            .plan__img-wrap
+              img(src="app/images/plan-image1.jpg" alt="Занятия на специальных тренажёрах")
+            h4.plan__caption.caption Занятия на специальных тренажёрах
+          li.plan__item
+            .plan__img-wrap
+              img(src="app/images/plan-image2.jpg" alt="Занятия на специальных тренажёрах")
+            h4.plan__caption.caption Занятия на специальных тренажёрах
+          li.plan__item
+            .plan__img-wrap
+              img(src="app/images/plan-image3.jpg" alt="Занятия на специальных тренажёрах")
+            h4.plan__caption.caption Занятия на специальных тренажёрах
+          li.plan__item
+            .plan__img-wrap
+              img(src="app/images/plan-image4.jpg" alt="Занятия на специальных тренажёрах")
+            h4.plan__caption.caption Занятия на специальных тренажёрах
+
+    .referral-discounts
+      include ../common/discounts.pug
+
+    .referral-contacts
+      include ../common/contacts.pug

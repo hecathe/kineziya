@@ -16,14 +16,20 @@
     margin-left: 50%;
 }
 
+.referral__title {
+    margin-bottom: 20px;
+}
+
 .referral__text {
-    font-family: "Circe", san-serif;
+    font-family: "Circe", sans-serif;
     font-size: 24px;
     line-height: 125%;
+    margin-bottom: 40px;
 }
 
 .referral__link-wrap {
     display: flex;
+    align-items: center;
 }
 
 .referral__link {
@@ -35,9 +41,131 @@
     font-weight: 300;
     @include font-18;
     text-decoration: line-through;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .referral__new-price {
     @include font-18;
     color: $color--blue;
+}
+
+//about-program
+
+.about-program {
+    margin-bottom: 150px;
+}
+
+.about-program__wrapper {
+    display: flex;
+    column-gap: 40px;
+}
+
+.about-program__text {
+    font-size: 24px;
+    line-height: 125%;
+
+    &:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+}
+
+.video-list__item {
+    &:not(:last-of-type) {
+        margin-bottom: 40px;
+    }
+}
+
+.video-list__img-wrap {
+    @include list-img;
+}
+
+.video-list__btn-wrap {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    .btn-video {
+        width: 150px;
+        height: 150px;
+
+        .btn-video__svg {
+            width: 58px;
+            height: 58px;
+            top: 45px;
+            left: 55px;
+        }
+    }
+}
+
+.video-list__caption {
+    @include list-caption;
+}
+
+//specialists
+
+.referral-specialists {
+    margin-bottom: 150px;
+}
+
+.referral-specialists__text-wrap {
+    display: flex;
+    column-gap: 40px;
+    margin-top: 60px;
+}
+
+.referral-specialists__text {
+    width: 420px;
+}
+
+//plan
+
+.plan {
+    margin-bottom: 150px;
+}
+
+.plan__subtitle {
+    margin-bottom: 80px;
+}
+
+.plan__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 115px;
+    row-gap: 65px;
+    counter-reset: plans;
+}
+
+.plan__item {
+    position: relative;
+    counter-increment: plans;
+    padding-left: 123px;
+
+    &::before {
+        content: "0" counter(plans);
+        position: absolute;
+        top: 32px;
+        left: 8px;
+        height: 100px;
+        font-family: "Roboto", sans-serif;
+        font-size: 130px;
+        color: $color-light-blue-50;
+        letter-spacing: -0.04em;
+        z-index: 5;
+    }
+}
+
+.plan__img-wrap {
+    @include list-img;
+    width: 440px;
+    height: 262px;
+}
+
+.referral-discounts {
+    margin-bottom: 200px;
 }
