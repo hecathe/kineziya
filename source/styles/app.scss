@@ -76,7 +76,7 @@ p, h1, h2, h3, h4 {
 //buttons
 
 .button {
-    font-family: "Circe", san-serif;
+    font-family: "Circe", sans-serif;
     font-size: 18px;
     line-height: 27px;
     display: flex;
@@ -123,7 +123,7 @@ p, h1, h2, h3, h4 {
 //titles
 
 .title, .subtitle {
-    font-family: "Circe", san-serif;
+    font-family: "Circe", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
@@ -161,3 +161,5 @@ p, h1, h2, h3, h4 {
 @import './pages/main';
 @import './pages/programs';
 @import './pages/referral';
+@import './pages/prices';
+@import './pages/specialist-page';

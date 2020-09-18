@@ -40,6 +40,16 @@
 
 @font-face {
     font-family: "Circe";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: 
+        url("../fonts/circe-light.woff2") format("woff2"),
+        url("../fonts/Circe-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Circe";
     font-weight: 500;
     font-style: normal;
     font-display: swap;

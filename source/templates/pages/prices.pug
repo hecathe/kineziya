@@ -4,3 +4,120 @@ block variables
   - var title = 'Цены'
 
 block content
+    main.main
+        h1.visually-hidden
+
+        section.prices
+            .prices__container.container
+                .prices__title-wrap
+                    a.prices__link.subtitle.active(href="#prices") Цены
+                    a.prices__link.subtitle(href="#discounts") Акции
+
+                .prices__tabs-group
+                    .prices__wrapper#prices.active
+                        .prices__wrap
+                            ul.prices__tab-list.tab-list
+                                li.tab-list__item
+                                    a.tab-list__link(href="#") Здоровая спина
+                                li.tab-list__item
+                                    a.tab-list__link(href="#") Реабилитация
+                                li.tab-list__item
+                                    a.tab-list__link(href="#") Управление весом
+                                li.tab-list__item
+                                    a.tab-list__link(href="#") Велнес, забота о здоровье
+
+                            ul.prices__list.prices-list
+                                li.prices-list__item
+                                    .prices-list__item-wrap
+                                        a.prices-list__link(href="#") Приём невролога-вертебролога — первичный
+                                    
+                                    .prices-list__prices
+                                        span.prices-list__old-price 2 000 ₽
+                                        span.prices-list__new-price 2 000 ₽
+
+                                li.prices-list__item
+                                    .prices-list__item-wrap
+                                        a.prices-list__link(href="#") Приём невролога-вертебролога — повторный
+                                    
+                                    .prices-list__prices
+                                        span.prices-list__price 1 500 ₽
+
+                                li.prices-list__item
+                                    .prices-list__item-wrap 
+                                        a.prices-list__select.active(href="#training") Занятия на специальных тренажёрах
+                                            <svg class="prices-list__svg active" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L6 6L11 1"  stroke-width="2"/>
+                                            </svg>
+                                    
+                                    .prices-list__prices
+                                        span.prices-list__price 4 000 – 5 500 ₽
+                                    
+                                    ul.prices-list__inserted-list.inserted-list.active#training
+                                        li.inserted-list__item
+                                            .inserted-list__item-wrap Фитбол
+                                            .inserted-list__prices 4 000 ₽
+                                        li.inserted-list__item
+                                            .inserted-list__item-wrap TRX
+                                            .inserted-list__prices 5 500 ₽
+                                
+                                li.prices-list__item
+                                    .prices-list__item-wrap 
+                                        a.prices-list__select(href="#massage") Массаж и мануальная терапия
+                                            <svg class="prices-list__svg" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L6 6L11 1" stroke-width="2"/>
+                                            </svg>
+                                    
+                                    .prices-list__prices
+                                        span.prices-list__price 4 000 – 5 500 ₽
+                                    
+                                    ul.prices-list__inserted-list.inserted-list#massage
+                                        li.inserted-list__item
+                                            .inserted-list__item-wrap Фитбол
+                                            .inserted-list__prices 4 000 ₽
+                                        li.inserted-list__item
+                                            .inserted-list__item-wrap TRX
+                                            .inserted-list__prices 5 500 ₽
+
+                                li.prices-list__item
+                                    .prices-list__item-wrap 
+                                        a.prices-list__select(href="#physio") Физиотерапия
+                                            <svg class="prices-list__svg" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L6 6L11 1" stroke-width="2"/>
+                                            </svg>
+                                    
+                                    .prices-list__prices
+                                        span.prices-list__price 4 000 – 5 500 ₽
+                                    
+                                    ul.prices-list__inserted-list.inserted-list#physio
+                                        li.inserted-list__item
+                                            .inserted-list__item-wrap Фитбол
+                                            .inserted-list__prices 4 000 ₽
+                                        li.inserted-list__item
+                                            .inserted-list__item-wrap TRX
+                                            .inserted-list__prices 5 500 ₽
+
+                                li.prices-list__item
+                                    .prices-list__item-wrap 
+                                        a.prices-list__select(href="#medication") Медикаментозная поддержка
+                                            <svg class="prices-list__svg" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L6 6L11 1" stroke-width="2"/>
+                                            </svg>
+
+                                    .prices-list__prices
+                                        span.prices-list__price 4 000 – 5 500 ₽
+                                    
+                                    ul.prices-list__inserted-list.inserted-list#medication
+                                        li.inserted-list__item
+                                            .inserted-list__item-wrap Фитбол
+                                            .inserted-list__prices 4 000 ₽
+                                        li.inserted-list__item
+                                            .inserted-list__item-wrap TRX
+                                            .inserted-list__prices 5 500 ₽
+
+                    .prices__wrapper#discounts
+                        include ../common/discounts.pug
+
+                a.prices__btn.button.button--border(href="#") Показать ещё
+
+        .prices-contacts
+            include ../common/contacts.pug
