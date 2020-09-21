@@ -25,6 +25,10 @@ $color-darkgrey: rgba(0, 0, 0, 0.2);
 * {
     box-sizing: border-box;
 }
+//time
+html {
+    overflow-x: hidden;
+}
 
 body {
     font-family: "Spectral", serif;

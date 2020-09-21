@@ -1,5 +1,9 @@
 .main {
     margin-bottom: 200px;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 150px;
+    }
 }
 
 .presentation {

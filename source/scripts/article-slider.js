@@ -6,7 +6,7 @@ var sliderBottom = new Swiper('.article-slider__container-bottom', {
     watchSlidesProgress: true,
   });
   var sliderTop = new Swiper('.article-slider__container-top', {
-    spaceBetween: 0,
+    spaceBetween: 20,
     thumbs: {
       swiper: sliderBottom
     }

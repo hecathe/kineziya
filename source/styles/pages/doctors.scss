@@ -68,6 +68,11 @@
     display: flex;
     column-gap: 20px;
 
+    @media (max-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .specialists-list__wrap {
         margin-top: 20px;
         margin-bottom: 15px;
