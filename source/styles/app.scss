@@ -1,3 +1,13 @@
+:root {
+    --tablet-width: 768px;
+    --mobile-width: 360px;
+}
+
+$tablet-width: 768px;
+$mobile-width-l: 425px;
+$mobile-width: 360px;
+$mobile-width-s: 320px;
+
 $color--black: #382719;
 $color--blue: #0067CA;
 $color-blue2: #025EB7;
@@ -171,3 +181,5 @@ button {
 @import './pages/prices';
 @import './pages/doctors';
 @import './pages/contacts';
+@import './pages/article';
+@import './pages/conf';

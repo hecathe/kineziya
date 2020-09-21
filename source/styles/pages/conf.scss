@@ -1,0 +1,48 @@
+.conf-main {
+    @media (max-width: $mobile-width) {
+        margin-bottom: 100px;
+    }
+}
+
+.conf {
+    margin-top: 80px;
+
+    @media (max-width: $tablet-width) {
+        margin-top: 60px;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-top: 40px;
+    }
+}
+
+.conf__title {
+    @media (max-width: $mobile-width-l) {
+        font-size: 34px;
+    }
+
+    @media (max-width: $mobile-width) {
+        font-size: 30px;
+        line-height: 120%;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: $mobile-width-s) {
+        font-size: 26px;
+    }
+}
+
+.conf__wrap {
+    max-width: 1130px;
+}
+
+.conf__text {
+    &:not(:last-of-type) {
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: $mobile-width) {
+        font-size: 16px;
+        line-height: 125%;
+    }
+}
