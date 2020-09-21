@@ -1,0 +1,109 @@
+.doctors {
+    margin-top: 80px;
+}
+
+.doctors__tabs-links {
+    width: max-content;
+    .tabs-links {
+        display: flex;
+        border-bottom: 1px solid $color-darkgrey;
+        padding-bottom: 7px;
+    }
+
+    .tabs-links__item {
+        &:not(:last-of-type) {
+            margin-right: 40px;
+        }
+    }
+
+    .tabs-links__link {
+        padding-bottom: 7px;
+    }
+}
+
+.doctors__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doctors__btn {
+    position: relative;
+    width: 110px;
+    height: 37px;
+    border-color: $color-grey-rgba-50;
+    color: $color--black;
+
+    &:hover {
+        background: none;
+        color: $color--black;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 5px;
+        background: url("../images/icon-tick.svg") no-repeat;
+        background-size: contain;
+        right: 10px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 9px;
+        background: url("../images/btn-rating.svg") no-repeat;
+        background-size: contain;
+        left: 10px;
+    }
+}
+
+.doctors__wrap {
+    margin-top: 40px;
+}
+
+.doctors-list {
+    display: flex;
+    column-gap: 20px;
+
+    .specialists-list__wrap {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .specialists-list__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .specialists-list__price-info {
+            margin: 0;
+            margin-top: 10px;
+        }
+    }
+}
+
+.doctors-list__img {
+    width: 325px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px;
+}
+
+/*.doctors__wrap {
+    .specialists-list {
+        display: flex;
+    }
+
+    .specialists-list__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .specialists-list__wrapper {
+        flex-direction: column;
+    }
+}*/

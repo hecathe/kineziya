@@ -23,6 +23,14 @@
     background-color: $color--header-col;
 }
 
+.specialists-list__img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 10px;
+}
+
 .specialists-list__wrap {
     align-self: center;
 }

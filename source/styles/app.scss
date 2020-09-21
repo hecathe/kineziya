@@ -9,6 +9,7 @@ $color-lightgrey: #DEE2EB;
 
 $color-grey-rgba-50: rgba(56, 39, 25, 0.5);
 $color-light-blue-50: rgba(149, 203, 255, 0.5);
+$color-darkgrey: rgba(0, 0, 0, 0.2);
 
 
 * {
@@ -49,6 +50,10 @@ p, h1, h2, h3, h4 {
     justify-content: space-between;
 }
 
+button {
+    outline: none;
+}
+
 .content {
     flex: 1;
 }
@@ -76,6 +81,7 @@ p, h1, h2, h3, h4 {
 //buttons
 
 .button {
+    min-width: max-content;
     font-family: "Circe", sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -156,10 +162,11 @@ p, h1, h2, h3, h4 {
 @import './common/contacts';
 @import './common/specialists-block';
 @import './common/discounts';
+@import './common/tabs-links';
 
 @import './pages/index';
 @import './pages/main';
 @import './pages/programs';
 @import './pages/referral';
 @import './pages/prices';
-@import './pages/specialist-page';
+@import './pages/doctors';
