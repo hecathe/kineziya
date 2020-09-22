@@ -1,5 +1,43 @@
-.tabs-links__link {
-    @include nav-link;
-    font-size: 24px;
-    line-height: 35px;
+.tabs-links {
+    padding-bottom: 7px;
+
+    @media (max-width: $tablet-width) {
+        display: flex;
+        overflow-x: scroll;
+        white-space: nowrap;
+        padding: 0 20px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid $color-darkgrey;
+        white-space: nowrap;
+
+        margin: 0 -20px;
+
+        &::after {
+            content: "";
+            padding-right: 20px;
+        }
+    }
+
+    .tabs-links__item {
+        @media (max-width: $tablet-width) {
+            &:not(:last-of-type) {
+                margin: 0;
+                margin-right: 30px;
+            }
+        }
+    }
+    
+    .tabs-links__link {
+        @include nav-link;
+        font-size: 24px;
+        line-height: 35px;
+        padding-bottom: 7px;
+    
+        @media (max-width: $tablet-width) {
+            font-size: 20px;
+            line-height: 125%;
+            padding-bottom: 9px;
+        }
+    }
 }
+

@@ -3,6 +3,11 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 40px;
+
+    @media (max-width: $mobile-width) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .specialists-list__item {
@@ -10,6 +15,10 @@
     grid-template-columns: min-content 1fr;
     grid-template-rows: min-content min-content;
     column-gap: 20px;
+
+    @media (max-width: $tablet-width) {
+        row-gap: 20px;
+    }
 }
 
 .specialists-list__img-wrap {
@@ -21,6 +30,11 @@
     height: 195px;
     border-radius: 10px;
     background-color: $color--header-col;
+
+    @media (max-width: $tablet-width) {
+        width: 91px;
+        height: 126px;
+    }
 }
 
 .specialists-list__img {
@@ -54,15 +68,32 @@
 .specialists-list__wrapper {
     display: flex;
     align-items: center;
+
+    @media (max-width: $tablet-width) {
+        grid-column: 1 / -1;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .specialists-list__link {
-    width: 206px;
-    height: 47px;
+    max-width: 206px;
+    min-height: 47px;
+
+    @media (max-width: $tablet-width) {
+        width: 182px;
+    }
 }
 
 .specialists-list__price-info {
     font-family: "Circe", sans-serif;
     @include font-18;
     margin-left: 20px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 0;
+        margin-top: 10px;
+    }
 }

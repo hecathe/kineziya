@@ -1,12 +1,37 @@
 .discounts__container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: $mobile-width) {
+        padding-bottom: 57px;
+    }
+}
+
+.discounts__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.discounts__subtitle {
+    margin: 0;
 }
 
 .discounts__link-wrap {
     display: flex;
     align-items: center;
+
+    @media (max-width: $mobile-width) {
+        width: 90%;
+        position: absolute;
+        justify-content: center;
+        bottom: 0;
+        margin: 0 auto;
+    }
 }
 
 .discounts__link {
@@ -20,6 +45,19 @@
 .discounts-list {
     display: flex;
     column-gap: 20px;
+
+    @media (max-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    @media (max-width: $mobile-width) {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30;
+    }
 }
 
 .discounts-list__img-wrap {
@@ -28,6 +66,27 @@
     border-radius: 10px;
     background-color: $color--header-col;
     margin-bottom: 20px;
+
+    @media (max-width: $tablet-width) {
+        width: 354px;
+        height: 281px;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 320px;
+        height: 254px;
+    }
+}
+
+.discounts-list__img {
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px;
+
+    @media (max-width: $tablet-width) {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .discounts-list__date {
@@ -56,4 +115,8 @@
     @include font-18;
     color: $color--blue;
     margin-left: 20px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 16px;
+    }
 }

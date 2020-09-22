@@ -4,6 +4,20 @@
     background-image: url("../images/pp-background.jpg");
     background-repeat: no-repeat;
     margin-bottom: 100px;
+
+    @media (max-width: $tablet-width) {
+        height: 636px;
+        background-position: -246px bottom;
+        background-size: 810px;
+        margin-bottom: 60px;
+    }
+
+    @media (max-width: $mobile-width) {
+        height: 500px;
+        background-position: 0px bottom;
+        background-size: 543px;
+        margin-bottom: 40px;
+    }
 }
 
 .programs-presentation__container {
@@ -14,9 +28,30 @@
 
 .programs-presentation__wrap {
     margin-left: 50%;
+
+    @media (max-width: $tablet-width) {
+        margin-left: 290px;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.programs-presentation__wrapper {
+    //box-shadow: ;
 }
 
 .programs-presentation__title {
+    font-size: 30px;
+    line-height: 100%;
     margin-bottom: 20px;
 }
 
@@ -27,6 +62,14 @@
 
 .programs-presentation__list {
     display: flex;
+
+    @media (max-width: $tablet-width) {
+        white-space: nowrap;
+    }
+
+    @media (max-width: $mobile-width) {
+        overflow-x: scroll;
+    }
 }
 
 .programs-presentation__item {
@@ -49,21 +92,58 @@
     .swiper-container {
         overflow: visible;
     }
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 80px;
+    }
 }
 
 .gallery__list {
     display: flex;
+
+    @media (max-width: $mobile-width) {
+        flex-direction: column;
+        row-gap: 30px;
+    }
 }
 
 .gallery__item {
+    margin-right: 20px;
+
     &.swiper-slide {
         width: auto;
         flex-shrink: 1;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin: 0;
     }
 }
 
 .gallery__img-wrap {
     @include list-img;
+
+    @media (max-width: $tablet-width) {
+        width: 435px;
+        height: 273px;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 320px;
+        height: 201px;
+    }
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+    border-radius: 10px;
 }
 
 .gallery__caption {
@@ -72,12 +152,40 @@
 
 .gallery__desc {
     font-weight: 200;
+
+    @media (max-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+.gallery__link {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+        display: flex;
+        width: 138px;
+        margin: 30px auto 0;
+    }
 }
 
 //specialist-block
 
 .specialists {
     margin-bottom: 150px;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 80px;
+    }
 }
 
 .specialists__container {
@@ -91,18 +199,47 @@
     line-height: 53px;
     color: $color--header-col;
     margin-left: 13px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-left: 5px;
+    }
 }
 
 .specialists__link {
     margin: 40px auto 0;
+
+    @media (max-width: $tablet-width) {
+        margin-top: 30px;
+    }
 }
 
 //reviews
 
 .programs-review {
     margin-bottom: 148px;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 80px;
+    }
 }
 
 .programs-discounts {
     margin-bottom: 200px;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 150px;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 100px;
+    }
 }

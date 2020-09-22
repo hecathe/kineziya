@@ -3,21 +3,61 @@
     background-color: $color-white;
     background-image: url("../images/referral-background.jpg");
     background-repeat: no-repeat;
+    background-position: 0px 0px;
     margin-bottom: 100px;
+
+    @media (max-width: $tablet-width) {
+        height: 521px;
+        background-position: -90px bottom;
+        background-size: contain;
+        margin-top: 115px;
+        margin-bottom: 60px;
+    }
+
+    @media (max-width: $mobile-width) {
+        height: 460px;
+        background-position: -128px bottom;
+        background-size: 722px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }
 
 .referral__container {
     height: 100%;
     display: flex;
     align-items: center;
+
+    @media (max-width: $tablet-width) {
+        align-items: flex-start;
+    }
 }
 
 .referral__wrap {
     margin-left: 50%;
+
+    @media (max-width: $tablet-width) {
+        margin-left: 290px;
+        margin-top: 63px;
+    }
+
+    @media (max-width: $mobile-width) {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        padding-bottom: 40px;
+    }
 }
 
 .referral__title {
     margin-bottom: 20px;
+
+    @media (max-width: $mobile-width) {
+        font-size: 30px;
+        line-height: 100%;
+    }
 }
 
 .referral__text {
@@ -25,6 +65,11 @@
     font-size: 24px;
     line-height: 125%;
     margin-bottom: 40px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 125%;
+    }
 }
 
 .referral__link-wrap {
@@ -35,6 +80,14 @@
 .referral__link {
     width: 325px;
     height: 50px;
+
+    @media (max-width: $tablet-width) {
+        width: 296px;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 100%;
+    }
 }
 
 .referral__old-price {
@@ -43,22 +96,58 @@
     text-decoration: line-through;
     margin-right: 20px;
     margin-left: 20px;
+
+    @media (max-width: $tablet-width) {
+        display: none;
+    }
 }
 
 .referral__new-price {
     @include font-18;
     color: $color--blue;
+
+    @media (max-width: $tablet-width) {
+        margin-left: 20px;
+    }
+
+    @media (max-width: $mobile-width) {
+        display: none;
+    }
 }
 
 //about-program
 
 .about-program {
     margin-bottom: 150px;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 80px;
+    }
 }
 
 .about-program__wrapper {
     display: flex;
     column-gap: 40px;
+
+    @media (max-width: $mobile-width) {
+        flex-direction: column;
+    }
+}
+
+.about-program__text-wrap {
+    @media (max-width: $tablet-width) {
+        height: 585px;
+        overflow-y: scroll;
+    }
+
+    @media (max-width: $mobile-width) {
+        height: 760px;
+        margin-bottom: 30px;
+    }
 }
 
 .about-program__text {
@@ -68,16 +157,41 @@
     &:not(:last-of-type) {
         margin-bottom: 20px;
     }
+
+    @media (max-width: $tablet-width) {
+        font-size: 20px;
+    }
 }
 
 .video-list__item {
     &:not(:last-of-type) {
         margin-bottom: 40px;
+
+        @media (max-width: $tablet-width) {
+            margin-bottom: 30px;
+        }
     }
 }
 
 .video-list__img-wrap {
     @include list-img;
+
+    @media (max-width: $tablet-width) {
+        width: 273px;
+        height: 181px;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 100%;
+        height: 213px;
+    }
+}
+
+.video-list__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .video-list__btn-wrap {
@@ -107,30 +221,79 @@
     @include list-caption;
 }
 
+.video-list__desc {
+    @media (max-width: $mobile-width) {
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
+
 //specialists
 
 .referral-specialists {
     margin-bottom: 150px;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 80px;
+    }
 }
 
 .referral-specialists__text-wrap {
     display: flex;
     column-gap: 40px;
     margin-top: 60px;
+
+    @media (max-width: $tablet-width) {
+        height: 320px;
+        flex-direction: column;
+        row-gap: 20px;
+        overflow-y: scroll;
+        margin-top: 40px;
+    }
+
+    @media (max-width: $mobile-width) {
+        height: 460px;
+    }
 }
 
 .referral-specialists__text {
     width: 420px;
+
+    @media (max-width: $tablet-width) {
+        width: 100%;
+    }
+
+    @media (max-width: $mobile-width) {
+        font-size: 16px;
+        line-height: 125%;
+    }
 }
 
 //plan
 
 .plan {
     margin-bottom: 150px;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 80px;
+    }
 }
 
 .plan__subtitle {
     margin-bottom: 80px;
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 60px;
+    }
 }
 
 .plan__list {
@@ -139,6 +302,17 @@
     column-gap: 115px;
     row-gap: 65px;
     counter-reset: plans;
+
+    @media (max-width: $tablet-width) {
+        column-gap: 20px;
+        row-gap: 80px;
+    }
+
+    @media (max-width: $mobile-width) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
 }
 
 .plan__item {
@@ -157,6 +331,20 @@
         color: $color-light-blue-50;
         letter-spacing: -0.04em;
         z-index: 5;
+
+        @media (max-width: $tablet-width) {
+            font-size: 92px;
+            top: -20px;
+            left: -15px;
+        }
+
+        @media (max-width: $mobile-width) {
+            font-size: 75px;
+        }
+    }
+
+    @media (max-width: $tablet-width) {
+        padding: 0;
     }
 }
 
@@ -164,8 +352,26 @@
     @include list-img;
     width: 440px;
     height: 262px;
+
+    @media (max-width: $tablet-width) {
+        width: 354px;
+        height: 211px;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 320px;
+        height: 191px;
+    }
 }
 
 .referral-discounts {
     margin-bottom: 200px;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 150px;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 80px;
+    }
 }

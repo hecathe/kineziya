@@ -1,13 +1,24 @@
 .doctors {
     margin-top: 80px;
+
+    @media (max-width: $tablet-width) {
+        margin-top: 60px;
+    }
 }
 
 .doctors__tabs-links {
-    width: max-content;
+
+    @media (max-width: $tablet-width) {
+        border-bottom: 1px solid $color-darkgrey;
+    }
+
     .tabs-links {
         display: flex;
         border-bottom: 1px solid $color-darkgrey;
-        padding-bottom: 7px;
+
+        @media (max-width: $tablet-width) {
+            border: none;
+        }
     }
 
     .tabs-links__item {
@@ -15,16 +26,33 @@
             margin-right: 40px;
         }
     }
-
-    .tabs-links__link {
-        padding-bottom: 7px;
-    }
 }
 
 .doctors__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: $mobile-width) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.doctors__title {
+    @media (max-width: $tablet-width) {
+        margin: 0;
+    }
+
+    @media (max-width: $mobile-width) {
+        font-size: 30px;
+        line-height: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 .doctors__btn {
@@ -71,6 +99,13 @@
     @media (max-width: $tablet-width) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    @media (max-width: $mobile-width) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
     }
 
     .specialists-list__wrap {
@@ -83,9 +118,20 @@
         flex-direction: column;
         align-items: flex-start;
 
+        .specialists-list__link {
+            @media (max-width: $mobile-width) {
+                width: 100%;
+            }
+        }
+
         .specialists-list__price-info {
             margin: 0;
             margin-top: 10px;
+
+            @media (max-width: $tablet-width) {
+                font-size: 16px;
+                line-height: 140%;
+            }
         }
     }
 }
@@ -94,8 +140,18 @@
     width: 325px;
     height: 450px;
     object-fit: cover;
-    object-position: center center;
+    object-position: center top;
     border-radius: 10px;
+
+    @media (max-width: $tablet-width) {
+        width: 229px;
+        height: 244px;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 320px;
+        height: 341px;
+    }
 }
 
 /*.doctors__wrap {

@@ -95,7 +95,6 @@ button {
 //buttons
 
 .button {
-    min-width: max-content;
     font-family: "Circe", sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -106,6 +105,11 @@ button {
     border-radius: 5px;
     background: none;
     border: none;
+
+    @media (max-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 140%;
+    }
 }
 
 .button--border {
@@ -153,6 +157,17 @@ button {
     margin-bottom: 40px;
 }
 
+.subtitle {
+    @media (max-width: $tablet-width) {
+        font-size: 30px;
+        line-height: 100%;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 30px;
+    }
+}
+
 .caption {
     font-family: Circe;
     font-style: normal;
@@ -161,6 +176,14 @@ button {
     line-height: 125%;
 
     margin-top: 20px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 20px;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-top: 15px;
+    }
 }
 
 @import './common/normalize';

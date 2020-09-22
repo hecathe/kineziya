@@ -8,8 +8,9 @@ block content
     section.referral
       .referral__container.container
         .referral__wrap
-          h1.referral__title.title Здоровая спина
-          p.referral__text Происходит естественное<br> восстановление организма за счёт<br> активированных внутренних ресурсов
+          .referral__wrapper
+            h1.referral__title.title Здоровая спина
+            p.referral__text Происходит естественное<br> восстановление организма за счёт<br> активированных внутренних ресурсов
         
           .referral__link-wrap
             a.referral__link.button.button--background(href="#") Записаться на первичный приём
@@ -50,6 +51,9 @@ block content
     section.referral-specialists
       .referral-specialists__container.container
         h2.referral-specialists__subtitle.subtitle Первичный приём невролога-вертебролога
+
+        //h2.specialists__subtitle.subtitle Наши специалисты
+        //span.specialists__number 19
 
         .referral-specialists__wrap
           include ../common/specialists-block.pug
