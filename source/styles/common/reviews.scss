@@ -135,6 +135,15 @@
 .swiper-button-next {
     width: 47px;
     top: -70px;
+
+    @media (max-width: $tablet-width) {
+        width: 30px;
+        top: -55px;
+    }
+
+    @media (max-width: $mobile-width-l) {
+        display: none;
+    }
 }
 
 .swiper-button-prev {
@@ -143,6 +152,10 @@
 
     &::before {
         top: 21px;
+    }
+
+    @media (max-width: $laptop-width) {
+        left: 90%;
     }
 }
 
@@ -163,6 +176,10 @@
     width: 40px;
     height: 2px;
     background-color: $color--blue;
+
+    @media (max-width: $tablet-width) {
+        width: 30px;
+    }
 }
 
 .swiper-button-prev::after,
@@ -170,4 +187,8 @@
     font-size: 18px;
     font-weight: 900;
     color: $color--blue;
+
+    @media (max-width: $tablet-width) {
+        font-size: 12px;
+    }
 }

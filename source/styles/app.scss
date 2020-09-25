@@ -35,6 +35,10 @@ html {
     @media (max-width: $tablet-width) {
         overflow-x: hidden;
     }
+
+    &.scroll-hidden {
+        overflow: hidden;
+    }
 }
 
 body {
