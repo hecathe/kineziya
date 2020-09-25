@@ -8,13 +8,15 @@ block content
 
     section.presentation
       .presentation__container.container
-        .presentation__wrap
-          p.presentation__text Комплексный подход к здоровью
-          h1.presentation__title.title Центр движения «Кинезия»
-          p.presentation__slogan Движение = лечение
-          a.presentation__button.button.button--background(href="#") Болит?
-        
-        include ../common/btn-video.pug
+        .presentation__wrapper
+          .presentation__wrap
+            p.presentation__text Комплексный подход к здоровью
+            h1.presentation__title.title Центр движения «Кинезия»
+            p.presentation__slogan Движение = лечение
+            a.presentation__button.button.button--background(href="#") Болит?
+          
+          .presentation__btn-wrap
+            include ../common/btn-video.pug
 
     section.about-company
       .about-company__container.container

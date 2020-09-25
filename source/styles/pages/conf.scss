@@ -1,5 +1,5 @@
 .conf-main {
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-bottom: 100px;
     }
 }
@@ -11,7 +11,7 @@
         margin-top: 60px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-top: 40px;
     }
 }
@@ -41,7 +41,7 @@
         margin-bottom: 25px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         font-size: 16px;
         line-height: 125%;
     }

@@ -8,38 +8,42 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header header--absolute">
+      <header class="header">
         <div class="header__container container"><a class="header__logo" href="#"><img class="header__img" src="app/images/logo.svg" alt="Логотип Кинезия" width="83" height="120"/></a>
-          <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <nav class="header__nav">
             <ul class="header__list header-list">
-              <li class="header-list__item"><a class="header-list__link" href="#">Программы</a></li>
-              <li class="header-list__item"><a class="header-list__link" href="#">Цены и акции</a></li>
-              <li class="header-list__item"><a class="header-list__link" href="#">Специалисты</a></li>
-              <li class="header-list__item"><a class="header-list__link" href="#">Контакты</a></li>
-              <li class="header-list__item"><a class="header-list__link" href="#">Здоровая спина </a></li>
+              <li class="header-list__item header-list__item--programs"><a class="header-list__link" href="#">Программы</a></li>
+              <li class="header-list__item header-list__item--prices"><a class="header-list__link" href="#">Цены и акции</a></li>
+              <li class="header-list__item header-list__item--specialist"><a class="header-list__link" href="#">Специалисты</a></li>
+              <li class="header-list__item header-list__item--contact"><a class="header-list__link" href="#">Контакты</a></li>
+              <li class="header-list__item header-list__item--health"><a class="header-list__link" href="#">Здоровая спина </a></li>
               <li class="header-list__item"><a class="header-list__link" href="#">Реабилитация</a></li>
               <li class="header-list__item"><a class="header-list__link" href="#">Управление весом</a></li>
               <li class="header-list__item"><a class="header-list__link" href="#">Забота о здоровье </a></li>
-              <li class="header-list__item"><a class="header-list__link" href="tel:+78124072121">+7 (812) 407-21-21</a></li>
-              <li class="header-list__item"><a class="header-list__link" href="#">info@kinesia.ru</a></li>
+              <li class="header-list__item header-list__item--tel"><a class="header-list__link" href="tel:+78124072121">+7 (812) 407-21-21</a></li>
+              <li class="header-list__item header-list__item--email"><a class="header-list__link" href="#">info@kinesia.ru</a></li>
             </ul>
-          </nav><a class="header__link button button--border">Записаться на консультацию</a>
+          </nav><a class="header__link button button--border" href="#">Записаться на консультацию</a>
+          <button class="header__toggle" type="button"><span class="header__toggle-middle" aria-label="Открыть меню"></span></button>
         </div>
       </header>
       <div class="content">
         <main class="main">
           <section class="presentation">
             <div class="presentation__container container">
-              <div class="presentation__wrap">
-                <p class="presentation__text">Комплексный подход к здоровью</p>
-                <h1 class="presentation__title title">Центр движения «Кинезия»</h1>
-                <p class="presentation__slogan">Движение = лечение</p><a class="presentation__button button button--background" href="#">Болит?</a>
-              </div>
-              <button class="btn-video" type="button"><svg class="btn-video__svg" width="36" height="42" viewBox="0 0 36 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="presentation__wrapper">
+                <div class="presentation__wrap">
+                  <p class="presentation__text">Комплексный подход к здоровью</p>
+                  <h1 class="presentation__title title">Центр движения «Кинезия»</h1>
+                  <p class="presentation__slogan">Движение = лечение</p><a class="presentation__button button button--background" href="#">Болит?</a>
+                </div>
+                <div class="presentation__btn-wrap">
+                  <button class="btn-video" type="button"><svg class="btn-video__svg" width="36" height="42" viewBox="0 0 36 42" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M35.1685 20.9999L0.415983 41.0642L0.415985 0.935507L35.1685 20.9999Z" fill="white"/>
 </svg>
-              </button>
+                  </button>
+                </div>
+              </div>
             </div>
           </section>
           <section class="about-company">
@@ -197,23 +201,23 @@
             </ul>
           </div>
           <ul class="footer__nav footer-nav">
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Программы</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Цены и акции</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Здоровая спина</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Управление весом</a></li>
+            <li class="footer-nav__item footer-nav__item--programs"><a class="footer-nav__link" href="#">Программы</a></li>
+            <li class="footer-nav__item footer-nav__item--price"><a class="footer-nav__link" href="#">Цены и акции</a></li>
+            <li class="footer-nav__item footer-nav__item--health"><a class="footer-nav__link" href="#">Здоровая спина</a></li>
+            <li class="footer-nav__item footer-nav__item--weight"><a class="footer-nav__link" href="#">Управление весом</a></li>
             <li class="footer-nav__item footer-nav__item--conf"><a class="footer-nav__link" href="#">Политика конфиденциальности</a></li>
           </ul>
           <ul class="footer__nav footer-nav">
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Специалисты</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Реабилитация</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Велнес, забота о здоровье</a></li>
+            <li class="footer-nav__item footer-nav__item--specialist"><a class="footer-nav__link" href="#">Специалисты</a></li>
+            <li class="footer-nav__item footer-nav__item--contact"><a class="footer-nav__link" href="#">Контакты</a></li>
+            <li class="footer-nav__item footer-nav__item--rehab"><a class="footer-nav__link" href="#">Реабилитация</a></li>
+            <li class="footer-nav__item footer-nav__item--velnes"><a class="footer-nav__link" href="#">Велнес, забота о здоровье</a></li>
             <li class="footer-nav__item footer-nav__item--rights">
               <p class="footer-nav__text">Все права защищены</p>
             </li>
           </ul>
           <ul class="footer__nav footer-nav">
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Санкт-Петербург, ул. Рентгена, 19</a></li>
+            <li class="footer-nav__item footer-nav__item--address"><a class="footer-nav__link" href="#">Санкт-Петербург, ул. Рентгена, 19</a></li>
             <li class="footer-nav__item"><a class="footer-nav__link" href="tel:+78124072121">+7 (812) 407-21-21</a></li>
             <li class="footer-nav__item"><a class="footer-nav__link" href="#">info@kinesia.ru</a></li>
             <li class="footer-nav__item footer-nav__item--copyright">
@@ -228,5 +232,7 @@
     <script src="app/scripts/price-tabs.js"></script>
     <script src="app/scripts/price-select.js"></script>
     <script src="app/scripts/article-slider.js"></script>
+    <script src="app/scripts/header.js"></script>
+    <script src="app/scripts/burger.js"></script>
   </body>
 </html>

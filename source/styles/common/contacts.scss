@@ -5,12 +5,19 @@
     column-gap: 151px;
     letter-spacing: 0.0015em;
 
+    @media (max-width: $laptop-width) {
+        grid-template-columns: auto min-content;
+        column-gap: 100px;
+        row-gap: 30px;
+    }
+
     @media (max-width: $tablet-width) {
         grid-template-columns: 455px 1fr;
         column-gap: 0;
+        row-gap: 0;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         display: flex;
         flex-direction: column;
     }
@@ -23,13 +30,17 @@
 .contacts__subtitle {
     margin-bottom: 20px;
 
+    @media (max-width: $laptop-width) {
+        font-size: 40px;
+    }
+
     @media (max-width: $tablet-width) {
         font-size: 30px;
         line-height: 100%;
         margin-bottom: 10px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-bottom: 15px;
     }
 }
@@ -41,7 +52,7 @@
         margin-bottom: 40px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         font-size: 16px;
         line-height: 125%;
         margin-bottom: 30px;
@@ -60,7 +71,7 @@
         margin-bottom: 40px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         order: 2;
     }
 }
@@ -90,7 +101,7 @@
         width: 364px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: auto;
     }
 }
@@ -149,7 +160,7 @@
         margin-top: 40px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         flex-direction: column;
         align-items: flex-start;
         margin-top: 30px;
@@ -177,7 +188,7 @@
         margin-right: 20px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: 100%;
         margin: 0;
         margin-bottom: 10px;
@@ -191,23 +202,28 @@
     height: 493px;
     background-color: $color-blue3;
 
+    @media (max-width: $laptop-width) {
+        width: 500px;
+    }
+
     @media (max-width: $tablet-width) {
         grid-column: 1 / -1;
         grid-row: 3 / -1;
+        height: 340px;
     }
 
-    @media (max-width: $mobile-width) {
-        width: 320px;
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        width: 100%;
         height: 149px;
         order: 4;
     }
 }
 
 .contacts__map {
-    @media (max-width: $mobile-width) {
-        width: 320px;
-        height: 149px;
-    }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 
@@ -217,15 +233,24 @@
     display: flex;
     column-gap: 78px;
 
+    @media (max-width: $laptop-width) {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        column-gap: 50px;
+        row-gap: 20px;
+    }
+
+
     @media (max-width: $tablet-width) {
+        display: flex;
         flex-direction: column;
         grid-row: 2 / 3;
         order: 3;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         display: grid;
-        grid-template-columns: 147px 159px;
+        grid-template-columns: max-content max-content;
         column-gap: 14px;
         margin-bottom: 30px;
     }
@@ -239,6 +264,12 @@
             margin-bottom: 20px;
         }
     }
+
+    @media (max-width: $mobile-width-s) {
+        &:nth-of-type(2) {
+            width: 120px;
+        }
+    }
 }
 
 .contacts-list__caption {
@@ -247,10 +278,14 @@
     line-height: 125%;
     margin-bottom: 10px;
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: 147px;
         font-size: 16px;
         line-height: 125%;
+    }
+
+    @media (max-width: $mobile-width-s) {
+        font-size: 14px;
     }
 }
 
@@ -259,10 +294,14 @@
     font-size: 16px;
     line-height: 150%;
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         font-size: 14px;
         line-height: 150%;
         letter-spacing: 0.0015em;
+    }
+
+    @media (max-width: $mobile-width-s) {
+        font-size: 12px;
     }
 }
 

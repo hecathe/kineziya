@@ -37,7 +37,7 @@
         margin-bottom: 40px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -48,7 +48,7 @@
         margin: 0;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         font-size: 30px;
         line-height: 100%;
         margin-bottom: 20px;
@@ -96,15 +96,16 @@
     display: flex;
     column-gap: 20px;
 
-    @media (max-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $laptop-width) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 40px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         display: flex;
         flex-direction: column;
+        align-items: center;
         row-gap: 30px;
     }
 
@@ -119,7 +120,7 @@
         align-items: flex-start;
 
         .specialists-list__link {
-            @media (max-width: $mobile-width) {
+            @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
                 width: 100%;
             }
         }
@@ -148,7 +149,7 @@
         height: 244px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: 320px;
         height: 341px;
     }

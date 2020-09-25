@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
     margin-bottom: 100px;
 
+    @media (max-width: $laptop-width) {
+        background-position: -246px bottom;
+    }
+
     @media (max-width: $tablet-width) {
         height: 636px;
         background-position: -246px bottom;
@@ -12,7 +16,7 @@
         margin-bottom: 60px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         height: 500px;
         background-position: 0px bottom;
         background-size: 543px;
@@ -33,20 +37,16 @@
         margin-left: 290px;
     }
 
-    @media (max-width: $mobile-width) {
-        width: fit-content;
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        width: fill-available;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 0;
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
     }
-}
-
-.programs-presentation__wrapper {
-    //box-shadow: ;
 }
 
 .programs-presentation__title {
@@ -67,8 +67,16 @@
         white-space: nowrap;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         overflow-x: scroll;
+        margin: 0 -20px;
+        padding: 0 20px;
+        padding-bottom: 10px;
+
+        &::after {
+            content: "";
+            padding-right: 20px;
+        }
     }
 }
 
@@ -97,7 +105,7 @@
         margin-bottom: 100px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-bottom: 80px;
     }
 }
@@ -105,8 +113,9 @@
 .gallery__list {
     display: flex;
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         flex-direction: column;
+        align-items: center;
         row-gap: 30px;
     }
 }
@@ -115,11 +124,10 @@
     margin-right: 20px;
 
     &.swiper-slide {
-        width: auto;
-        flex-shrink: 1;
+        width: min-content;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin: 0;
     }
 }
@@ -132,9 +140,14 @@
         height: 273px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: 320px;
         height: 201px;
+    }
+
+    @media (max-width: $mobile-width-s) {
+        width: 280px;
+        height: 161px;
     }
 }
 
@@ -158,7 +171,7 @@
         line-height: 150%;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: 100%;
         font-size: 14px;
     }
@@ -167,7 +180,7 @@
 .gallery__link {
     display: none;
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         display: flex;
         width: 138px;
         margin: 30px auto 0;
@@ -179,11 +192,11 @@
 .specialists {
     margin-bottom: 150px;
 
-    @media (max-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $laptop-width) {
         margin-bottom: 100px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-bottom: 80px;
     }
 }
@@ -205,7 +218,7 @@
         line-height: 125%;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-left: 5px;
     }
 }
@@ -227,7 +240,7 @@
         margin-bottom: 100px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-bottom: 80px;
     }
 }
@@ -239,7 +252,7 @@
         margin-bottom: 150px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-bottom: 100px;
     }
 }

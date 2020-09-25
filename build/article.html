@@ -8,23 +8,23 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header header--absolute">
+      <header class="header">
         <div class="header__container container"><a class="header__logo" href="#"><img class="header__img" src="app/images/logo.svg" alt="Логотип Кинезия" width="83" height="120"/></a>
-          <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <nav class="header__nav">
             <ul class="header__list header-list">
-              <li class="header-list__item"><a class="header-list__link" href="#">Программы</a></li>
-              <li class="header-list__item"><a class="header-list__link" href="#">Цены и акции</a></li>
-              <li class="header-list__item"><a class="header-list__link" href="#">Специалисты</a></li>
-              <li class="header-list__item"><a class="header-list__link" href="#">Контакты</a></li>
-              <li class="header-list__item"><a class="header-list__link" href="#">Здоровая спина </a></li>
+              <li class="header-list__item header-list__item--programs"><a class="header-list__link" href="#">Программы</a></li>
+              <li class="header-list__item header-list__item--prices"><a class="header-list__link" href="#">Цены и акции</a></li>
+              <li class="header-list__item header-list__item--specialist"><a class="header-list__link" href="#">Специалисты</a></li>
+              <li class="header-list__item header-list__item--contact"><a class="header-list__link" href="#">Контакты</a></li>
+              <li class="header-list__item header-list__item--health"><a class="header-list__link" href="#">Здоровая спина </a></li>
               <li class="header-list__item"><a class="header-list__link" href="#">Реабилитация</a></li>
               <li class="header-list__item"><a class="header-list__link" href="#">Управление весом</a></li>
               <li class="header-list__item"><a class="header-list__link" href="#">Забота о здоровье </a></li>
-              <li class="header-list__item"><a class="header-list__link" href="tel:+78124072121">+7 (812) 407-21-21</a></li>
-              <li class="header-list__item"><a class="header-list__link" href="#">info@kinesia.ru</a></li>
+              <li class="header-list__item header-list__item--tel"><a class="header-list__link" href="tel:+78124072121">+7 (812) 407-21-21</a></li>
+              <li class="header-list__item header-list__item--email"><a class="header-list__link" href="#">info@kinesia.ru</a></li>
             </ul>
-          </nav><a class="header__link button button--border">Записаться на консультацию</a>
+          </nav><a class="header__link button button--border" href="#">Записаться на консультацию</a>
+          <button class="header__toggle" type="button"><span class="header__toggle-middle" aria-label="Открыть меню"></span></button>
         </div>
       </header>
       <div class="content">
@@ -51,13 +51,13 @@
                 <div class="article__side-wrap">
                   <p class="article__side-text">С момента обращения в бюро мы привлекаем к общению людей, которые будут заниматься вашим проектом. Мы сразу введём в курс дела команду — ведь самое главное говорится вначале, потом начинаются детали.</p>
                   <p class="article__side-text">Поэтому мы просим клиентов письменно ответить на наши вопросы, чтобы понять, как мы можем быть полезны и кто в бюро займётся проектом.</p>
-                  <p class="article__side-text article__side-text--mobile">Мы тщательно изучим ответы и попросим вас о подробной встрече. Приносим искренние извинения, если не ответим на ваше письмо — это лишь значит, что мы не видим возможности помочь в вашей задаче. Мы будем рады оказаться полезны в будущем.</p>
-                  <p class="article__side-text article__side-text--mobile">Пишите: <a class="article__side-contact" href="#">info@kinesia.ru</a></p>
+                  <p class="article__side-text">Мы тщательно изучим ответы и попросим вас о подробной встрече. Приносим искренние извинения, если не ответим на ваше письмо — это лишь значит, что мы не видим возможности помочь в вашей задаче. Мы будем рады оказаться полезны в будущем.</p>
+                  <p class="article__side-text">Пишите: <a class="article__side-contact" href="#">info@kinesia.ru</a></p>
                 </div>
                 <div class="article__slider article-slider">
                   <div class="article-slider__container-top swiper-container">
                     <div class="article-slider__wrapper swiper-wrapper">
-                      <figure class="article-slider__slide swiper-slide"><img class="article-slider__img" src="app/images/article-slide-image1.jpg" alt=""/>
+                      <figure class="article-slider__slide swiper-slide"><img class="article-slider__img" src="app/images/article-slide-image1.jpg" alt="Купоны из «Теремка»"/>
                         <figcaption class="article-slider__caption">Купоны из «Теремка»</figcaption>
                       </figure>
                       <figure class="article-slider__slide swiper-slide"><img class="article-slider__img" src="app/images/article-slide-image2.jpg" alt=""/>
@@ -99,23 +99,23 @@
             </ul>
           </div>
           <ul class="footer__nav footer-nav">
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Программы</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Цены и акции</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Здоровая спина</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Управление весом</a></li>
+            <li class="footer-nav__item footer-nav__item--programs"><a class="footer-nav__link" href="#">Программы</a></li>
+            <li class="footer-nav__item footer-nav__item--price"><a class="footer-nav__link" href="#">Цены и акции</a></li>
+            <li class="footer-nav__item footer-nav__item--health"><a class="footer-nav__link" href="#">Здоровая спина</a></li>
+            <li class="footer-nav__item footer-nav__item--weight"><a class="footer-nav__link" href="#">Управление весом</a></li>
             <li class="footer-nav__item footer-nav__item--conf"><a class="footer-nav__link" href="#">Политика конфиденциальности</a></li>
           </ul>
           <ul class="footer__nav footer-nav">
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Специалисты</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Реабилитация</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Велнес, забота о здоровье</a></li>
+            <li class="footer-nav__item footer-nav__item--specialist"><a class="footer-nav__link" href="#">Специалисты</a></li>
+            <li class="footer-nav__item footer-nav__item--contact"><a class="footer-nav__link" href="#">Контакты</a></li>
+            <li class="footer-nav__item footer-nav__item--rehab"><a class="footer-nav__link" href="#">Реабилитация</a></li>
+            <li class="footer-nav__item footer-nav__item--velnes"><a class="footer-nav__link" href="#">Велнес, забота о здоровье</a></li>
             <li class="footer-nav__item footer-nav__item--rights">
               <p class="footer-nav__text">Все права защищены</p>
             </li>
           </ul>
           <ul class="footer__nav footer-nav">
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Санкт-Петербург, ул. Рентгена, 19</a></li>
+            <li class="footer-nav__item footer-nav__item--address"><a class="footer-nav__link" href="#">Санкт-Петербург, ул. Рентгена, 19</a></li>
             <li class="footer-nav__item"><a class="footer-nav__link" href="tel:+78124072121">+7 (812) 407-21-21</a></li>
             <li class="footer-nav__item"><a class="footer-nav__link" href="#">info@kinesia.ru</a></li>
             <li class="footer-nav__item footer-nav__item--copyright">
@@ -130,5 +130,7 @@
     <script src="app/scripts/price-tabs.js"></script>
     <script src="app/scripts/price-select.js"></script>
     <script src="app/scripts/article-slider.js"></script>
+    <script src="app/scripts/header.js"></script>
+    <script src="app/scripts/burger.js"></script>
   </body>
 </html>

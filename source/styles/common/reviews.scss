@@ -7,8 +7,9 @@
 .reviews__list {
     display: flex;
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         flex-direction: column;
+        align-items: center;
         row-gap: 30px;
     }
 }
@@ -20,7 +21,7 @@
         width: auto;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin: 0;
     }
 }
@@ -33,9 +34,14 @@
         height: 290px;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: 320px;
         height: 213px;
+    }
+
+    @media (max-width: $mobile-width-s) {
+        width: 280px;
+        height: 173px;
     }
 }
 
@@ -59,7 +65,7 @@
         line-height: 150%;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         font-size: 14px;
     }
 }
@@ -73,13 +79,47 @@
     bottom: 0;
     left: 0;
     margin: auto;
+
+    @media (max-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+
+        .btn-video {
+            width: 100%;
+            height: 100%;
+
+            .btn-video__svg {
+                width: 30px;
+                height: 30px;
+                top: 26px;
+                left: 28px;
+            }
+        }
+    }
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        width: 60px;
+        height: 60px;
+
+        .btn-video {
+            width: 100%;
+            height: 100%;
+
+            .btn-video__svg {
+                width: 23px;
+                height: 23px;
+                top: 18px;
+                left: 20px;
+            }
+        }
+    }
 }
 
 
 .review__link {
     display: none;
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: 121px;
         display: flex;
         margin: 0 auto;

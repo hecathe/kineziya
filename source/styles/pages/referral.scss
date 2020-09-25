@@ -14,7 +14,7 @@
         margin-bottom: 60px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         height: 460px;
         background-position: -128px bottom;
         background-size: 722px;
@@ -41,7 +41,7 @@
         margin-top: 63px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -54,7 +54,7 @@
 .referral__title {
     margin-bottom: 20px;
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         font-size: 30px;
         line-height: 100%;
     }
@@ -85,7 +85,7 @@
         width: 296px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: 100%;
     }
 }
@@ -110,7 +110,7 @@
         margin-left: 20px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         display: none;
     }
 }
@@ -124,7 +124,7 @@
         margin-bottom: 100px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-bottom: 80px;
     }
 }
@@ -133,7 +133,7 @@
     display: flex;
     column-gap: 40px;
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         flex-direction: column;
     }
 }
@@ -144,7 +144,7 @@
         overflow-y: scroll;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         height: 760px;
         margin-bottom: 30px;
     }
@@ -176,12 +176,17 @@
 .video-list__img-wrap {
     @include list-img;
 
+    @media (max-width: $laptop-width) {
+        width: 369px;
+        height: 253px;
+    }
+
     @media (max-width: $tablet-width) {
         width: 273px;
         height: 181px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: 100%;
         height: 213px;
     }
@@ -191,7 +196,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
+    object-position: center bottom;
 }
 
 .video-list__btn-wrap {
@@ -205,14 +210,56 @@
     margin: auto;
 
     .btn-video {
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        height: 100%;
 
         .btn-video__svg {
             width: 58px;
             height: 58px;
             top: 45px;
             left: 55px;
+        }
+    }
+
+    @media (max-width: $laptop-width) {
+        width: 80px;
+        height: 80px;
+
+        .btn-video {
+            .btn-video__svg {
+                width: 30px;
+                height: 30px;
+                top: 25px;
+                left: 28px;
+            }
+        }
+    }
+
+    @media (max-width: $tablet-width) {
+        width: 50px;
+        height: 50px;
+
+        .btn-video {
+            .btn-video__svg {
+                width: 19px;
+                height: 19px;
+                top: 15px;
+                left: 17px;
+            }
+        }
+    }
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        width: 60px;
+        height: 60px;
+
+        .btn-video {
+            .btn-video__svg {
+                width: 23px;
+                height: 23px;
+                top: 18px;
+                left: 21px;
+            }
         }
     }
 }
@@ -222,7 +269,7 @@
 }
 
 .video-list__desc {
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         font-weight: 200;
         font-size: 14px;
         line-height: 150%;
@@ -238,7 +285,7 @@
         margin-bottom: 100px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-bottom: 80px;
     }
 }
@@ -256,7 +303,7 @@
         margin-top: 40px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         height: 460px;
     }
 }
@@ -268,7 +315,7 @@
         width: 100%;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         font-size: 16px;
         line-height: 125%;
     }
@@ -279,11 +326,11 @@
 .plan {
     margin-bottom: 150px;
 
-    @media (max-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $laptop-width) {
         margin-bottom: 100px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-bottom: 80px;
     }
 }
@@ -291,7 +338,7 @@
 .plan__subtitle {
     margin-bottom: 80px;
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-bottom: 60px;
     }
 }
@@ -303,14 +350,18 @@
     row-gap: 65px;
     counter-reset: plans;
 
-    @media (max-width: $tablet-width) {
+
+
+    @media (min-width: $tablet-width) and (max-width: $laptop-width) {
         column-gap: 20px;
         row-gap: 80px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        column-gap: 0;
         row-gap: 50px;
     }
 }
@@ -332,19 +383,22 @@
         letter-spacing: -0.04em;
         z-index: 5;
 
-        @media (max-width: $tablet-width) {
+        @media (min-width: $tablet-width) and (max-width: $laptop-width) {
             font-size: 92px;
             top: -20px;
             left: -15px;
         }
 
-        @media (max-width: $mobile-width) {
-            font-size: 75px;
+        @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+            top: -16px;
+            font-size: 68px;
         }
     }
 
-    @media (max-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $laptop-width) {
         padding: 0;
+        width: min-content;
+        justify-self: center;
     }
 }
 
@@ -353,15 +407,27 @@
     width: 440px;
     height: 262px;
 
-    @media (max-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $laptop-width) {
         width: 354px;
         height: 211px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: 320px;
         height: 191px;
     }
+
+    @media (max-width: $mobile-width-s) {
+        width: 280px;
+        height: 151px;
+    }
+}
+
+.plan__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .referral-discounts {
@@ -371,7 +437,7 @@
         margin-bottom: 150px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-bottom: 80px;
     }
 }

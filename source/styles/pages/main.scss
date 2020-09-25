@@ -1,19 +1,24 @@
-.main {
-    margin-bottom: 200px;
-
-    @media (max-width: $tablet-width) {
-        margin-bottom: 150px;
-    }
-}
-
 .presentation {
     height: 890px;
     font-family: "Circe", san-serif;
     font-weight: normal;
-    color: $color-white;
+    color: $color-lightgrey;
     background-color: $color--header-col;
     background-image: url("../images/main-background.jpg");
     background-repeat: repeat;
+    background-position: center;
+
+    @media (max-width: $tablet-width) {
+        height: 860px;
+        background-position: center 0px;
+        background-size: 1383px;
+    }
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        height: 640px;
+        background-position: -72px 0px;
+        background-size: 965px;
+    }
 }
 
 .presentation__container {
@@ -21,21 +26,121 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        align-items: flex-end;
+        padding-bottom: 40px;
+    }
+}
+
+.presentation__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        position: relative;
+    }
+}
+
+.presentation__wrap {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        order: 2;
+    }
+}
+
+.presentation__text {
+    font-size: 24px;
+    line-height: 125%;
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    @media (max-width: $mobile-width-s) {
+        font-size: 16px;
+    }
 }
 
 .presentation__title {
     margin: 20px 0;
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        font-size: 42px;
+        line-height: 115%;
+    }
+
+    @media (max-width: $mobile-width-s) {
+        font-size: 36px;
+    }
 }
 
 .presentation__slogan {
-    font-size: 32px;
+    font-size: 36px;
     line-height: 125%;
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        font-size: 30px;
+    }
+
+    @media (max-width: $mobile-width-s) {
+        font-size: 26px;
+    }
 }
 
 .presentation__button {
     width: 210px;
     min-height: 50px;
     margin-top: 60px;
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        width: 240px;
+        margin-top: 153px;
+        margin-left: 80px;
+    }
+
+    @media (max-width: $mobile-width-s) {
+        width: 190px;
+    }
+}
+
+.presentation__btn-wrap {
+    display: flex;
+
+    @media (max-width: $tablet-width) {
+        align-self: flex-end;
+
+        .btn-video {
+            width: 60px;
+            height: 60px;
+    
+            .btn-video__svg {
+                width: 23px;
+                height: 23px;
+                top: 18px;
+                left: 20px;
+            }
+        }
+    }
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        position: absolute;
+        order: 1;
+
+        .btn-video {
+            width: 40px;
+            height: 40px;
+    
+            .btn-video__svg {
+                width: 15px;
+                height: 15px;
+                top: 12px;
+                left: 14px;
+            }
+        }
+    }
 }
 
 //about-company
@@ -43,6 +148,16 @@
 .about-company {
     margin-top: 100px;
     margin-bottom: 150px;
+
+    @media (max-width: $tablet-width) {
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
 }
 
 .about-company__container {
@@ -59,7 +174,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    top: 0;
+    top: 10px;
     width: 400px;
     height: 335px;
     text-align: center;
@@ -78,6 +193,10 @@
         line-height: 125%;
         color: $color--black;
     }
+
+    @media (max-width: $tablet-width) {
+        display: none;
+    }
 }
 
 .about-company__text {
@@ -86,6 +205,19 @@
 
     &:not(:last-of-type) {
         margin-bottom: 30px;
+
+        @media (max-width: $tablet-width) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        font-size: 16px;
     }
 }
 
@@ -94,6 +226,15 @@
     font-size: 32px;
     line-height: 125%;
     margin-bottom: 30px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        font-size: 20px
+    }
 }
 
 //programs-block
@@ -105,11 +246,19 @@
         margin-bottom: 100px;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         margin-bottom: 80px;
     }
 }
 
 .reviews-wrap {
     margin-bottom: 204px;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 150px;
+    }
+
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+        margin-bottom: 100px;
+    }
 }
