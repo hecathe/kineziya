@@ -6,9 +6,9 @@ section.contacts
 
         form.contacts__form(action="#" method="post")
             label.contacts__label Ваше имя
-                input.contacts__input(type="text" placeholder="Имя")
+                input.contacts__input(type="text" placeholder="Имя" data-required)
             label.contacts__label
-                input.contacts__input(type="tel" placeholder="Телефон")
+                input.contacts__input(type="tel" placeholder="Телефон" data-required data-type="tel")
                 
             button.contacts__select-btn(type="button") Проблематика
 

@@ -1,0 +1,26 @@
+.popup-form-wrap
+    .popup-fade
+        section.popup-form
+            h2.popup__title.title Заказать обратный звонок
+
+            form.popup-form__form.contacts__form(action="#" method="post")
+                .popup-form__label-wrap
+                    label.contacts__label Ваше имя
+                        input.contacts__input(type="text" placeholder="Имя" data-required)
+                    label.contacts__label
+                        input.contacts__input(type="tel" placeholder="Телефон" data-required data-type="tel")
+                    button.contacts__select-btn(type="button") Дата и время звонка
+                        <svg class="contacts__select-svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.998047 1L4.97923 5.04698L8.99681 1.02956" stroke="#382719" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+
+                .contacts__btn-wrap
+                    button.contacts__button.button.button--background(type="submit") Связаться
+                    p.contacts__info Отправляя личные данные, Вы соглашаетесь с 
+                        a.contacts__info-link(href="#") политикой обработки персональных данных
+
+            button.popup-form__close-btn.popup-close(type="button")
+                <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2997 0.709971C12.9097 0.319971 12.2797 0.319971 11.8897 0.709971L6.99973 5.58997L2.10973 0.699971C1.71973 0.309971 1.08973 0.309971 0.699727 0.699971C0.309727 1.08997 0.309727 1.71997 0.699727 2.10997L5.58973 6.99997L0.699727 11.89C0.309727 12.28 0.309727 12.91 0.699727 13.3C1.08973 13.69 1.71973 13.69 2.10973 13.3L6.99973 8.40997L11.8897 13.3C12.2797 13.69 12.9097 13.69 13.2997 13.3C13.6897 12.91 13.6897 12.28 13.2997 11.89L8.40973 6.99997L13.2997 2.10997C13.6797 1.72997 13.6797 1.08997 13.2997 0.709971Z" fill="#1D1D1D"/>
+                </svg>

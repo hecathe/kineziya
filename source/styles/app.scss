@@ -10,6 +10,7 @@ $mobile-width-m: 375px;
 $mobile-width: 360px;
 $mobile-width-s: 320px;
 
+$color-black-2: #48443E;
 $color-superblack: #1D1D1D;
 $color--black: #382719;
 $color--blue: #0067CA;
@@ -19,6 +20,7 @@ $color-white: #FFFFFF;
 $color--header-col: #9B6044;
 $color-pp-background: #CACACC;
 $color-lightgrey: #DEE2EB;
+$color-light-green: #57924B;
 
 $color-grey-rgba-50: rgba(56, 39, 25, 0.5);
 $color-light-blue-50: rgba(149, 203, 255, 0.5);
@@ -217,6 +219,9 @@ button {
 @import './common/specialists-block';
 @import './common/discounts';
 @import './common/tabs-links';
+
+@import './common/popup-form';
+@import './common/popup-app';
 
 @import './pages/index';
 @import './pages/main';

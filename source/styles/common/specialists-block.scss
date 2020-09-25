@@ -16,7 +16,7 @@
     grid-template-rows: min-content min-content;
     column-gap: 20px;
 
-    @media (min-width: $tablet-width) and (max-width: $laptop-width) {
+    @media (max-width: $laptop-width) {
         row-gap: 20px;
     }
 }
@@ -31,7 +31,7 @@
     border-radius: 10px;
     background-color: $color--header-col;
 
-    @media (min-width: $tablet-width) and (max-width: $laptop-width) {
+    @media (max-width: $laptop-width) {
         width: 91px;
         height: 126px;
     }
@@ -69,7 +69,7 @@
     display: flex;
     align-items: center;
 
-    @media (min-width: $tablet-width)  and (max-width: $laptop-width) {
+    @media (max-width: $laptop-width) {
         grid-column: 1 / -1;
         flex-direction: column;
         align-items: flex-start;
@@ -90,7 +90,7 @@
     @include font-18;
     margin-left: 20px;
 
-    @media (min-width: $tablet-width) and (max-width: $laptop-width) {
+    @media (max-width: $laptop-width) {
         font-size: 16px;
         line-height: 140%;
         margin: 0;

@@ -42,11 +42,11 @@
     }
 
     @media (max-width: $mobile-width-l) {
-        column-gap: 110px;
+        column-gap: 73px;
     }
 
     @media (max-width: $mobile-width-m) {
-        column-gap: 60px;
+        column-gap: 43px;
     }
 
     @media (max-width: $mobile-width) {
@@ -54,7 +54,7 @@
     }
 
     @media (max-width: $mobile-width-s) {
-        column-gap: 29px;
+        column-gap: 46px;
     }
 }
 
@@ -149,6 +149,10 @@
 
 .footer-nav__link {
     @include nav-link;
+
+    @media (max-width: $mobile-width-s) {
+        font-size: 12px;
+    }
 }
 
 .footer-nav__text {
@@ -175,11 +179,22 @@
 
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         position: absolute;
-        right: 94px;
+    }
+
+    @media (max-width: $mobile-width-l) {
+        right: 131px;
+    }
+
+    @media (max-width: $mobile-width-m) {
+        right: 111px;
+    }
+    
+    @media (max-width: $mobile-width) {
+        right: 95px;
     }
 
     @media (max-width: $mobile-width-s) {
-        right: 70px;
+        right: 73px;
     }
 }
 
@@ -211,12 +226,23 @@
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: 149px;
         position: absolute;
-        right: 31px;
         bottom: 70px;
     }
 
+    @media (max-width: $mobile-width-l) {
+        right: 67px;
+    }
+
+    @media (max-width: $mobile-width-m) {
+        right: 48px;
+    }
+
+    @media (max-width: $mobile-width) {
+        right: 32px;
+    }
+
     @media (max-width: $mobile-width-s) {
-        right: 7px;
+        right: -3px;
     }
 }
 
@@ -267,6 +293,10 @@
         width: 159px;
         order: 4;
     }
+
+    @media (max-width: $mobile-width-s) {
+        width: 125px;
+    }
 }
 
 .footer-nav__item--rights {
@@ -310,11 +340,22 @@
 
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         position: absolute;
-        right: 50px;
         bottom: 40px;
     }
 
+    @media (max-width: $mobile-width-l) {
+        right: 84px;
+    }
+
+    @media (max-width: $mobile-width-m) {
+        right: 65px;
+    }
+
+    @media (max-width: $mobile-width) {
+        right: 49px;
+    }
+
     @media (max-width: $mobile-width-s) {
-        right: 24px;
+        right: 22px;
     }
 }
