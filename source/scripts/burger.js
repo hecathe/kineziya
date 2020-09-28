@@ -10,12 +10,12 @@ function toggleMenu(event) {
     page.classList.toggle('scroll-hidden');
 };
 
-toggle.addEventListener('click', function(e) {
+toggle.addEventListener('click', function(event) {
     e.stopPropagation();
     toggleMenu();
 });
 
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function(event) {
     const target = e.target;
     const its_menu = target == headerNav || headerNav.contains(target);
     const its_toggle = target == toggle;
