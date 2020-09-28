@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <title>Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="app/styles/app.min.css"/>
+    <link rel="stylesheet" href="app/styles/app.min.css"/><script src="https://api-maps.yandex.ru/2.0-stable/?apikey=c4a97329-5172-4985-a1bd-9aa314e5cb92&load=package.standard&lang=ru-RU" type="text/javascript"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -164,7 +164,7 @@
                     <button class="contacts__button button button--background" type="submit">Отправить заявку</button>
                   </div>
                 </form>
-                <div class="contacts__map-wrap"><img class="contacts__map" src="app/images/map.png" width="749" height="493" alt="«Кинезия», центр движения  г. Санкт-Петербург, ул. Рентгена, д. 19"/></div>
+                <div class="contacts__map-wrap" id="map"></div>
                 <ul class="contacts__list contacts-list">
                   <li class="contacts-list__item">
                     <h4 class="contacts-list__caption">«Кинезия», центр движения </h4>
@@ -270,7 +270,7 @@
       </div>
       <div class="video-wrap">
         <div class="video-fade">
-          <div class="video-wrapper"><iframe width="900" height="600" src="https://www.youtube.com/embed/sRMJEpKA3tw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="video-wrapper"><iframe class="video" width="900" height="600" src="https://www.youtube.com/embed/sRMJEpKA3tw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <button class="video-close" type="button"><svg class="video-close__svg" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2997 0.709971C12.9097 0.319971 12.2797 0.319971 11.8897 0.709971L6.99973 5.58997L2.10973 0.699971C1.71973 0.309971 1.08973 0.309971 0.699727 0.699971C0.309727 1.08997 0.309727 1.71997 0.699727 2.10997L5.58973 6.99997L0.699727 11.89C0.309727 12.28 0.309727 12.91 0.699727 13.3C1.08973 13.69 1.71973 13.69 2.10973 13.3L6.99973 8.40997L11.8897 13.3C12.2797 13.69 12.9097 13.69 13.2997 13.3C13.6897 12.91 13.6897 12.28 13.2997 11.89L8.40973 6.99997L13.2997 2.10997C13.6797 1.72997 13.6797 1.08997 13.2997 0.709971Z"/>
 </svg>
@@ -290,5 +290,6 @@
     <script src="app/scripts/popup-form.js"></script>
     <script src="app/scripts/form-error.js"></script>
     <script src="app/scripts/video-popup.js"></script>
+    <script src="app/scripts/map.js"></script>
   </body>
 </html>

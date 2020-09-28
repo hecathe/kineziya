@@ -11,12 +11,12 @@ function toggleMenu(event) {
 };
 
 toggle.addEventListener('click', function(event) {
-    e.stopPropagation();
+    event.stopPropagation();
     toggleMenu();
 });
 
 document.addEventListener('click', function(event) {
-    const target = e.target;
+    const target = event.target;
     const its_menu = target == headerNav || headerNav.contains(target);
     const its_toggle = target == toggle;
     const headerNav_is_active = headerNav.classList.contains('active');

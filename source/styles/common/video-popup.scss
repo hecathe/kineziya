@@ -6,6 +6,18 @@
     }
 }
 
+.video {
+    @media (max-width: $tablet-width) {
+        width: 600px;
+        height: 300px;
+    }
+
+    @media (max-width: $mobile-width-l) {
+        width: 300px;
+        height: 200px;
+    }
+}
+
 .video-fade {
     &::before {
         content: '';
@@ -29,6 +41,16 @@
     right: 0;
     margin: auto;
     z-index: 20;
+
+    @media (max-width: $tablet-width) {
+        width: 600px;
+        height: 300px;
+    }
+
+    @media (max-width: $mobile-width-l) {
+        width: 300px;
+        height: 200px;
+    }
 }
 
 .video-close {
