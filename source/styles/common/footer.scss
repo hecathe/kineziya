@@ -7,7 +7,7 @@
         height: 316px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         height: 496px;
         font-size: 14px;
         line-height: 140%;
@@ -15,63 +15,63 @@
 }
 
 .footer__container {
+    position: relative;
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: max-content max-content max-content max-content;
-    column-gap: 122px;
+    grid-template-columns: 20% 20% 20% 20%;
+    column-gap: 4%;
     padding-top: 40px;
     padding-bottom: 40px;
 
-    @media (max-width: $laptop-width) {
-        column-gap: 50px;
+    @media (min-width: $mobile-width-l) and (max-width: $tablet-width-s) {
+        column-gap: 5%;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         position: relative;
-        column-gap: 34px;
-        padding-bottom: 60px;
-    }
-
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
-        position: relative;
-        grid-template-columns: max-content 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: max-content max-content max-content;
         row-gap: 30px;
         padding-bottom: 40px;
     }
 
-    @media (max-width: $mobile-width-l) {
+    /*@media (max-width: $mobile-width-l) {
         column-gap: 73px;
     }
 
     @media (max-width: $mobile-width-m) {
         column-gap: 43px;
-    }
+    }*/
 
     @media (max-width: $mobile-width) {
-        column-gap: 44px;
+        column-gap: 15%;
     }
 
-    @media (max-width: $mobile-width-s) {
+   /* @media (max-width: $mobile-width-s) {
         column-gap: 46px;
-    }
+    }*/
 }
 
 .footer__wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     @media (max-width: $tablet-width) {
         margin-right: 40px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         order: 1;
         margin: 0;
     }
+}
+
+.footer__logo {
+    width: 108px;
+    height: 156px;
 }
 
 .social-list {
@@ -79,10 +79,6 @@
     width: 112px;
 
     .social-list__item {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 24px;
         height: 24px;
         border: 1px solid $color--header-col;
@@ -95,13 +91,25 @@
         }
     }
 
-    .social-list__link--vk {
-        position: absolute;
-        top: 6.5px;
-        left: 2px;
+    .social-list__link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    .social-list__link--vk {
+        justify-content: flex-start;
+
+        svg {
+            margin-left: 2px;
+        }
+    }
+
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         position: absolute;
         bottom: 78px;
     }
@@ -124,12 +132,12 @@
     &:last-of-type {
         margin-left: 120px;
 
-        @media (max-width: $laptop-width) {
+        @media (max-width: $laptop-width-l) {
             margin: 0;
         }
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         row-gap: 10px;
 
         &:first-of-type {
@@ -158,6 +166,14 @@
 .footer-nav__text {
     font-family: "Circe", san-serif;
     color: $color--black;
+
+    @media (max-width: $mobile-width-s) {
+        font-size: 12px;
+    }
+}
+
+.footer-nav__text--address {
+    font-style: normal;
 }
 
 //position item
@@ -167,7 +183,7 @@
         display: none;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         display: block;
     }
 }
@@ -177,24 +193,17 @@
         order: 3;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         position: absolute;
+        left: 52%;
     }
 
-    @media (max-width: $mobile-width-l) {
-        right: 131px;
-    }
-
-    @media (max-width: $mobile-width-m) {
-        right: 111px;
-    }
-    
     @media (max-width: $mobile-width) {
-        right: 95px;
+        left: 50%;
     }
 
     @media (max-width: $mobile-width-s) {
-        right: 73px;
+        left: 53%;
     }
 }
 
@@ -203,7 +212,7 @@
         order: 1;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         margin-top: 30px;
     }
 }
@@ -217,32 +226,29 @@
 .footer-nav__item--conf {
     margin-top: 38px;
 
+    @media (max-width: 1130px) {
+        width: 162px;
+    }
+
     @media (max-width: $tablet-width) {
         width: 162px;
         order: 4;
         margin-top: 76px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         width: 149px;
         position: absolute;
         bottom: 70px;
-    }
-
-    @media (max-width: $mobile-width-l) {
-        right: 67px;
-    }
-
-    @media (max-width: $mobile-width-m) {
-        right: 48px;
+        left: 52%;
     }
 
     @media (max-width: $mobile-width) {
-        right: 32px;
+        left: 50%;
     }
 
     @media (max-width: $mobile-width-s) {
-        right: -3px;
+        left: 53%;
     }
 }
 
@@ -253,7 +259,7 @@
         order: 3;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         position: absolute;
         left: 20px;
         top: 256px;
@@ -261,13 +267,13 @@
 }
 
 .footer-nav__item--contact {
-    @media (max-width: $tablet-width) {
+    @media (min-width: $tablet-width-xs) and (max-width: $tablet-width) {
         position: absolute;
         top: 160px;
-        left: 206px;
+        left: 26.5%;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         position: static;
         margin-top: 30px;
     }
@@ -278,18 +284,22 @@
         order: 1;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         order: 3;
     }
 }
 
 .footer-nav__item--velnes {
+    @media (max-width: 920px) {
+        width: 154px
+    }
+
     @media (max-width: $tablet-width) {
         width: 154px;
         order: 2;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         width: 159px;
         order: 4;
     }
@@ -307,7 +317,7 @@
         margin-top: 56px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         position: absolute;
         left: 20px;
         bottom: 40px;
@@ -317,11 +327,15 @@
 //3 nav
 
 .footer-nav__item--address {
+    @media (max-width: 850px) {
+        width: 147px;
+    }
+
     @media (max-width: $tablet-width) {
         width: 147px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         width: 129px;
     }
 }
@@ -338,24 +352,8 @@
         margin-top: 56px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         position: absolute;
         bottom: 40px;
-    }
-
-    @media (max-width: $mobile-width-l) {
-        right: 84px;
-    }
-
-    @media (max-width: $mobile-width-m) {
-        right: 65px;
-    }
-
-    @media (max-width: $mobile-width) {
-        right: 49px;
-    }
-
-    @media (max-width: $mobile-width-s) {
-        right: 22px;
     }
 }

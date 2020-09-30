@@ -40,13 +40,13 @@
 }
 
 .header__logo {
-    margin-right: 72px;
+    margin-right: 5%;
 
-    @media (max-width: $laptop-width) {
+    @media (max-width: $laptop-width-m) {
         margin-right: 25px;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         margin-right: 99px;
     }
 }
@@ -112,7 +112,7 @@
         transition: all 0.2s ease 0s;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -139,7 +139,7 @@
 
 .header__nav {
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         
         &.active {
             position: absolute;
@@ -155,7 +155,7 @@
         }
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         display: none;
 
         &.active {
@@ -172,34 +172,36 @@
     column-gap: 40px;
     row-gap: 15px;
 
-    @media (max-width: $laptop-width) {
+    @media (max-width: $laptop-width-m) {
         column-gap: 15px;
         row-gap: 22px;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         grid-template-columns: 1fr;
         row-gap: 10px;
 
         .header__nav.active & {
-            position: absolute;
-            top: -103px;
-            left: 202px;
+            width: max-content;
+            margin-top: -96px;
+            margin-left: 202px;
         }
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
 
         .header__nav.active & {
+            position: absolute;
             top: 40px;
             left: 20px;
+            margin: 0;
         }
     }
 }
 
 .header-list__item {
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         display: none;
 
         .header__nav.active & {
@@ -212,7 +214,7 @@
     @include nav-link;
     @include font-18;
 
-    @media (max-width: $laptop-width) {
+    @media (max-width: $laptop-width-m) {
         @include font-16;
     }
 
@@ -229,12 +231,12 @@
     align-self: flex-end;
     margin-bottom: 17.5px;
 
-    @media (max-width: $laptop-width) {
+    @media (max-width: $laptop-width-m) {
         width: 180px;
         font-size: 12px;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         width: 268px;
         display: none;
         font-size: 18px;
@@ -250,7 +252,7 @@
         }
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         .header__nav.active + & {
             width: 89%;
             z-index: 15;
@@ -263,13 +265,13 @@
 //item tablet
 
 .header-list__item--programs {
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         display: block;
     }
 }
 
 .header-list__item--prices {
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         display: block;
     }
 }
@@ -282,11 +284,11 @@
     top: 29px;
     right: 192px;
 
-    @media (max-width: $laptop-width) {
+    @media (max-width: $laptop-width-m) {
         top: 33px;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         display: block;
         top: 58px;
         right: 84px;
@@ -295,12 +297,11 @@
         line-height: 27px;
 
         .header__nav.active & {
-            top: 20px;
-            right: -334px;
+            top: -83px;
         }
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         .header__nav.active & {
             display: none;
         }
@@ -312,16 +313,16 @@
     top: 28px;
     right: 20px;
 
-    @media (max-width: $laptop-width) {
+    @media (max-width: $laptop-width-m) {
         top: 34px;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         top: 178px;
         right: -250px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         top: 31px;
         right: -144px;
     }
@@ -332,17 +333,17 @@
 }
 
 .header-list__item--specialist {
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         margin-top: 68px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         margin-top: 0;
     }
 }
 
 .header-list__item--health {
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         .header__nav.active & {
             display: none;
         }
@@ -350,13 +351,13 @@
 }
 
 .header-list__item--contact {
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         position: absolute;
         right: -203px;
         bottom: 110px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         top: 0;
         right: -98px;
     }

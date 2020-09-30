@@ -19,6 +19,6 @@ ymaps.ready(init);
             iconImageSize: [80, 80],
             iconImageOffset: [-48, -70]
         });
-
+        
         myMap.geoObjects.add(myPlacemark);
     }

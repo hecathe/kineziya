@@ -50,19 +50,19 @@
                 <h2 class="programs-block__subtitle subtitle">Программы</h2>
                 <ul class="programs-block__list">
                   <li class="programs-block__item">
-                    <div class="programs-block__img-wrap"><img class="programs-block__image" src="app/images/pb-image1.jpg" width="325" height="402" alt="Здоровая спина"/></div>
+                    <div class="programs-block__wrap"><img class="programs-block__image" src="app/images/pb-image1.jpg" width="325" height="402" alt="Здоровая спина"/></div>
                     <h4 class="programs-block__caption caption">Здоровая спина</h4>
                   </li>
                   <li class="programs-block__item">
-                    <div class="programs-block__img-wrap"><img class="programs-block__image" src="app/images/pb-image2.jpg" width="325" height="402" alt="Реабилитация"/></div>
+                    <div class="programs-block__wrap"><img class="programs-block__image" src="app/images/pb-image2.jpg" width="325" height="402" alt="Реабилитация"/></div>
                     <h4 class="programs-block__caption caption">Реабилитация</h4>
                   </li>
                   <li class="programs-block__item">
-                    <div class="programs-block__img-wrap"><img class="programs-block__image" src="app/images/pb-image3.jpg" width="325" height="402" alt="Управление весом"/></div>
+                    <div class="programs-block__wrap"><img class="programs-block__image" src="app/images/pb-image3.jpg" width="325" height="402" alt="Управление весом"/></div>
                     <h4 class="programs-block__caption caption">Управление весом</h4>
                   </li>
                   <li class="programs-block__item">
-                    <div class="programs-block__img-wrap"><img class="programs-block__image" src="app/images/pb-image4.jpg" width="325" height="402" alt="Велнес, забота о здоровье"/></div>
+                    <div class="programs-block__wrap"><img class="programs-block__image" src="app/images/pb-image4.jpg" width="325" height="402" alt="Велнес, забота о здоровье"/></div>
                     <h4 class="programs-block__caption caption">Велнес, забота о здоровье</h4>
                   </li>
                 </ul>
@@ -256,7 +256,7 @@
                   </ul>
                   <textarea class="contacts__comment-field" name="comment" cols="20" rows="1" placeholder="Сообщение"></textarea>
                   <div class="contacts__btn-wrap">
-                    <p class="contacts__info">Отправляя заявку, вы даёте согласие на обработку данных.</p>
+                    <p class="contacts__info">Отправляя заявку, вы даёте согласие на <a class="contacts__info-link" href="#">обработку данных.</a></p>
                     <button class="contacts__button button button--background" type="submit">Отправить заявку</button>
                   </div>
                 </form>
@@ -266,12 +266,10 @@
                     <h4 class="contacts-list__caption">«Кинезия», центр движения </h4>
                     <p class="contacts-list__text">г. Санкт-Петербург,<br> ул. Рентгена, д. 19</p>
                   </li>
-                  <li class="contacts-list__item">
-                    <h4 class="contacts-list__caption">+7 (812) 748-35-95</h4>
+                  <li class="contacts-list__item"><a class="contacts-list__caption" href="tel:+78127483595">+7 (812) 748-35-95</a>
                     <p class="contacts-list__text">Приятный человеческий<br> голос на проводе</p>
                   </li>
-                  <li class="contacts-list__item">
-                    <h4 class="contacts-list__caption">info@kinesia.ru</h4>
+                  <li class="contacts-list__item"><a class="contacts-list__caption" href="#">info@kinesia.ru</a>
                     <p class="contacts-list__text contacts-list__text--wrap">Пишите — мы ответим</p>
                   </li>
                 </ul>
@@ -313,7 +311,9 @@
             </li>
           </ul>
           <ul class="footer__nav footer-nav">
-            <li class="footer-nav__item footer-nav__item--address"><a class="footer-nav__link" href="#">Санкт-Петербург, ул. Рентгена, 19</a></li>
+            <li class="footer-nav__item footer-nav__item--address">
+              <address class="footer-nav__text footer-nav__text--address" href="#">Санкт-Петербург, ул. Рентгена, 19</address>
+            </li>
             <li class="footer-nav__item"><a class="footer-nav__link" href="tel:+78124072121">+7 (812) 407-21-21</a></li>
             <li class="footer-nav__item"><a class="footer-nav__link" href="#">info@kinesia.ru</a></li>
             <li class="footer-nav__item footer-nav__item--copyright">

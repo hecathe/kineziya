@@ -20,7 +20,8 @@ section.contacts
             textarea.contacts__comment-field(name="comment", cols="20", rows="1" placeholder="Сообщение")
 
             .contacts__btn-wrap
-                p.contacts__info Отправляя заявку, вы даёте согласие на обработку данных.
+                p.contacts__info Отправляя заявку, вы даёте согласие на 
+                    a.contacts__info-link(href="#") обработку данных.
 
                 button.contacts__button.button.button--background(type="submit") Отправить заявку
 
@@ -31,8 +32,8 @@ section.contacts
                 h4.contacts-list__caption «Кинезия», центр движения 
                 p.contacts-list__text г. Санкт-Петербург,<br> ул. Рентгена, д. 19
             li.contacts-list__item
-                h4.contacts-list__caption +7 (812) 748-35-95
+                a(href="tel:+78127483595").contacts-list__caption +7 (812) 748-35-95
                 p.contacts-list__text Приятный человеческий<br> голос на проводе
             li.contacts-list__item
-                h4.contacts-list__caption info@kinesia.ru
+                a(href="#").contacts-list__caption info@kinesia.ru
                 p.contacts-list__text.contacts-list__text--wrap Пишите — мы ответим

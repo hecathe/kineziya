@@ -1,7 +1,7 @@
 .tabs-links {
     padding-bottom: 7px;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         display: flex;
         overflow-x: scroll;
         white-space: nowrap;
@@ -19,7 +19,7 @@
     }
 
     .tabs-links__item {
-        @media (max-width: $tablet-width) {
+        @media (max-width: $laptop-width) {
             &:not(:last-of-type) {
                 margin: 0;
                 margin-right: 30px;
@@ -33,7 +33,7 @@
         line-height: 35px;
         padding-bottom: 7px;
     
-        @media (max-width: $tablet-width) {
+        @media (max-width: $laptop-width) {
             font-size: 20px;
             line-height: 125%;
             padding-bottom: 9px;

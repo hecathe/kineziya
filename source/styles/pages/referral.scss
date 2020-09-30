@@ -301,15 +301,9 @@
     margin-top: 60px;
 
     @media (max-width: $tablet-width) {
-        height: 320px;
         flex-direction: column;
         row-gap: 20px;
-        overflow-y: scroll;
         margin-top: 40px;
-    }
-
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
-        height: 460px;
     }
 }
 

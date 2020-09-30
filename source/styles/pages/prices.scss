@@ -46,7 +46,7 @@
     border-radius: 5px;
     padding: 43px 40px 40px;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         flex-direction: column;
         padding: 0;
         box-shadow: none;
@@ -76,38 +76,36 @@
         }
     }
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         margin-bottom: 20px;
         border-bottom: 1px solid $color-darkgrey;
     }
 }
 
 .prices-list {
+    width: 70%;
+
+    @media (max-width: $laptop-width) {
+        width: 100%;
+    }
+
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
-        height: 405px;
         font-weight: 200;
         font-size: 16px;
         line-height: 125%;
-        overflow-y: scroll;
-        overflow-x: hidden;
     }
 }
 
 .prices-list__item {
-    width: 891px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 70% 30%;
 
     &:not(:last-of-type) {
         margin-bottom: 10px;
 
-        @media (max-width: $laptop-width) {
-            column-gap: 30px;
-        }
-
         @media (max-width: $tablet-width) {
             margin-bottom: 12px;
-            column-gap: 0;
         }
 
         @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
@@ -123,7 +121,7 @@
         width: 100%;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         display: flex;
         flex-direction: column;
     }
@@ -140,6 +138,7 @@
 }
 
 .prices-list__prices {
+    justify-self: flex-end;
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         order: 1;
     }
@@ -255,14 +254,18 @@
         }
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         display: flex;
         flex-direction: column;
     }
 }
 
-.inserted-list__item-wrap {
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+.inserted-list__link {
+    /*width: max-content;
+    @include nav-link;*/
+    color: $color--black;
+
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         order: 2;
         margin-top: 5px;
     }
