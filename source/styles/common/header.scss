@@ -318,17 +318,17 @@
     }
 
     @media (max-width: $laptop-width) {
-        top: 178px;
-        right: -250px;
+        top: 63px;
+        right: 180px;
     }
 
     @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         top: 31px;
-        right: -144px;
+        right: -145px;
     }
 
     @media (max-width: $mobile-width-s) {
-        right: -135px;
+        right: -134px;
     }
 }
 
@@ -353,8 +353,8 @@
 .header-list__item--contact {
     @media (max-width: $laptop-width) {
         position: absolute;
-        right: -203px;
-        bottom: 110px;
+        top: 33px;
+        right: 220px;
     }
 
     @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {

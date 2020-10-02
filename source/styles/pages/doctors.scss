@@ -96,9 +96,15 @@
     display: flex;
     column-gap: 20px;
 
-    @media (min-width: $tablet-width) and (max-width: $laptop-width) {
+    @media (min-width: $tablet-width-xs) and (max-width: $laptop-width) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    @media (min-width: $mobile-width-l) and (max-width: $tablet-width-xs) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         row-gap: 40px;
     }
 
@@ -137,35 +143,26 @@
     }
 }
 
-.doctors-list__img {
-    width: 325px;
+.doctors-list__img-wrap {
+    max-width: 325px;
     height: 450px;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 10px;
 
+    
     @media (max-width: $tablet-width) {
-        width: 229px;
+        width: 100%;
         height: 244px;
     }
 
+
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
-        width: 320px;
         height: 341px;
     }
 }
 
-/*.doctors__wrap {
-    .specialists-list {
-        display: flex;
-    }
-
-    .specialists-list__item {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .specialists-list__wrapper {
-        flex-direction: column;
-    }
-}*/
+.doctors-list__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 10px;
+}

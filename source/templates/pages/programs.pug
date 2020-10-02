@@ -30,20 +30,23 @@ block content
                         li.gallery__item.swiper-slide
                             .gallery__img-wrap
                                 img.gallery__img(src="app/images/g-image1.jpg" width="567" height="378" alt="Массажный кабинет")
-                            h4.gallery__caption.caption Массажный кабинет
-                            p.gallery__desc Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия
+                            .gallery__wrap
+                                h4.gallery__caption.caption Массажный кабинет
+                                p.gallery__desc Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия
 
                         li.gallery__item.swiper-slide
                             .gallery__img-wrap
                                 img.gallery__img(src="app/images/g-image2.jpg" width="589" height="370" alt="Кабинет ЛФК")
-                            h4.gallery__caption.caption Кабинет ЛФК
-                            p.gallery__desc Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия
+                            .gallery__wrap
+                                h4.gallery__caption.caption Кабинет ЛФК
+                                p.gallery__desc Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия
 
                         li.gallery__item.swiper-slide
                             .gallery__img-wrap
                                 img.gallery__img(src="app/images/g-image3.jpg" width="558" height="372" alt="Зал функциональных тренировок")
-                            h4.gallery__caption.caption Зал функциональных тренировок
-                            p.gallery__desc Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия
+                            .gallery__wrap
+                                h4.gallery__caption.caption Зал функциональных тренировок
+                                p.gallery__desc Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия
                     
                     .swiper-button-prev
                     .swiper-button-next
@@ -52,8 +55,9 @@ block content
 
         section.specialists
             .specialists__container.container
-                h2.specialists__subtitle.subtitle Наши специалисты
-                span.specialists__number 19
+                .specialists__wrap
+                    h2.specialists__subtitle.subtitle Наши специалисты
+                    span.specialists__number 19
 
                 include ../common/specialists-block.pug
 

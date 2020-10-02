@@ -55,12 +55,11 @@
     font-size: 24px;
     line-height: 125%;
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: 460px) {
         font-size: 20px;
-        line-height: 125%;
     }
 
-    @media (max-width: $mobile-width-s) {
+    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-m) {
         font-size: 16px;
     }
 }
@@ -68,12 +67,12 @@
 .presentation__title {
     margin: 20px 0;
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         font-size: 42px;
         line-height: 115%;
     }
 
-    @media (max-width: $mobile-width-s) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         font-size: 36px;
     }
 }
@@ -82,7 +81,7 @@
     font-size: 36px;
     line-height: 125%;
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: 460px) {
         font-size: 30px;
     }
 
@@ -92,25 +91,25 @@
 }
 
 .presentation__button {
-    width: 210px;
+    max-width: 210px;
     min-height: 50px;
     margin-top: 60px;
 
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
-        width: 240px;
+        max-width: 240px;
         margin-top: 153px;
         margin-left: 80px;
     }
 
     @media (max-width: $mobile-width-s) {
-        width: 190px;
+        max-width: 190px;
     }
 }
 
 .presentation__btn-wrap {
     display: flex;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         align-self: flex-end;
 
         .btn-video {
@@ -164,10 +163,15 @@
 .about-company__container {
     display: flex;
     justify-content: space-between;
+    column-gap: 20px;
 }
 
 .about-company__article {
     width: 815px;
+
+    @media (max-width: $laptop-width) {
+        width: 100%;
+    }
 }
 
 .about-company__wrap {
@@ -195,7 +199,7 @@
         color: $color--black;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         display: none;
     }
 }

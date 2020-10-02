@@ -210,6 +210,7 @@
 }
 
 .contacts__map-wrap {
+    position: relative;
     grid-column: 2 / -1;
     grid-row: 1 / 3;
     max-width: 749px;
@@ -233,6 +234,43 @@
         width: 100%;
         height: 149px;
         order: 4;
+    }
+}
+
+.contacts__map-ctrl {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    pointer-events: none;
+
+    @media (max-width: $laptop-width) {
+        display: block;
+    }
+}
+
+.contacts__map-info {
+    position: relative;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: $color-white;
+
+    &:first-of-type {
+        @media (max-width: $laptop-width) {
+            display: none;
+        }
+    }
+
+    &:last-of-type {
+        display: none;
+
+        @media (max-width: $laptop-width) {
+            display: block;
+        }
     }
 }
 

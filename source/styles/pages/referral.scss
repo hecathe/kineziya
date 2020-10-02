@@ -6,15 +6,18 @@
     background-position: 0px 0px;
     margin-bottom: 100px;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         height: 521px;
         background-position: -90px bottom;
         background-size: contain;
-        margin-top: 115px;
         margin-bottom: 60px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (max-width: $tablet-width) {
+        margin-top: 115px;
+    }
+ 
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         height: 460px;
         background-position: -128px bottom;
         background-size: 722px;
@@ -36,12 +39,15 @@
 .referral__wrap {
     margin-left: 50%;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         margin-left: 290px;
+    }
+
+    @media (max-width: $tablet-width) {
         margin-top: 63px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         width: 100%;
         height: 100%;
         display: flex;
@@ -67,7 +73,7 @@
     line-height: 125%;
     margin-bottom: 40px;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         font-size: 20px;
         line-height: 125%;
     }
@@ -90,7 +96,7 @@
         width: 296px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         width: 100%;
     }
 }
@@ -102,7 +108,7 @@
     margin-right: 20px;
     margin-left: 20px;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         display: none;
     }
 }
@@ -111,11 +117,11 @@
     @include font-18;
     color: $color--blue;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         margin-left: 20px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         display: none;
     }
 }
@@ -136,20 +142,23 @@
 
 .about-program__wrapper {
     display: flex;
+    justify-content: space-between;
     column-gap: 40px;
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         flex-direction: column;
     }
 }
 
 .about-program__text-wrap {
+    max-width: 763px;
+
     @media (max-width: $tablet-width) {
         height: 585px;
         overflow-y: scroll;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         height: 760px;
         margin-bottom: 30px;
     }
@@ -180,18 +189,19 @@
 
 .video-list__img-wrap {
     @include list-img;
+    width: 555px;
 
-    @media (max-width: $laptop-width) {
+    @media (max-width: $laptop-width-m) {
         width: 369px;
         height: 253px;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: 900px) {
         width: 273px;
         height: 181px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         width: 100%;
         height: 253px;
     }
@@ -201,7 +211,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
+    object-position: center top;
 }
 
 .video-list__btn-wrap {
@@ -349,14 +359,12 @@
     row-gap: 65px;
     counter-reset: plans;
 
-
-
-    @media (max-width: $laptop-width) {
+    @media (max-width: $laptop-width-m) {
         column-gap: 20px;
         row-gap: 80px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -395,29 +403,27 @@
     }
 
     @media (max-width: $laptop-width) {
+        width: 100%;
         padding: 0;
-        width: min-content;
         justify-self: center;
     }
 }
 
 .plan__img-wrap {
     @include list-img;
-    width: 440px;
+    max-width: 440px;
     height: 262px;
 
     @media (max-width: $laptop-width) {
-        width: 354px;
+        max-width: 100%;
         height: 211px;
     }
 
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
-        width: 320px;
         height: 191px;
     }
 
     @media (max-width: $mobile-width-s) {
-        width: 280px;
         height: 151px;
     }
 }

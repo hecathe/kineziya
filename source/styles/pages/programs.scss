@@ -5,18 +5,18 @@
     background-repeat: no-repeat;
     margin-bottom: 100px;
 
-    @media (max-width: $laptop-width) {
+    @media (max-width: $laptop-width-l) {
         background-position: -246px bottom;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         height: 636px;
         background-position: -246px bottom;
         background-size: 810px;
         margin-bottom: 60px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
         height: 500px;
         background-position: 0px bottom;
         background-size: 543px;
@@ -33,12 +33,12 @@
 .programs-presentation__wrap {
     margin-left: 50%;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         margin-left: 290px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
-        width: fill-available;
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-s) {
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -62,12 +62,13 @@
 
 .programs-presentation__list {
     display: flex;
+    column-gap: 10px;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         white-space: nowrap;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $laptop-width) {
         overflow-x: scroll;
         margin: 0 -20px;
         padding: 0 20px;
@@ -77,12 +78,6 @@
             content: "";
             padding-right: 20px;
         }
-    }
-}
-
-.programs-presentation__item {
-    &:not(:last-of-type) {
-        margin-right: 10px;
     }
 }
 
@@ -113,7 +108,7 @@
 .gallery__list {
     display: flex;
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         flex-direction: column;
         align-items: center;
         row-gap: 30px;
@@ -124,10 +119,13 @@
     margin-right: 20px;
 
     &.swiper-slide {
-        width: min-content;
+        width: auto;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 0;
     }
 }
@@ -136,17 +134,16 @@
     @include list-img;
 
     @media (max-width: $tablet-width) {
-        width: 435px;
+        max-width: 435px;
         height: 273px;
     }
 
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
-        width: 320px;
+        max-width: 320px;
         height: 201px;
     }
 
     @media (max-width: $mobile-width-s) {
-        width: 280px;
         height: 161px;
     }
 }
@@ -164,6 +161,7 @@
 }
 
 .gallery__desc {
+    max-width: 420px;
     font-weight: 200;
 
     @media (max-width: $tablet-width) {
@@ -204,6 +202,20 @@
 .specialists__container {
     display: flex;
     flex-wrap: wrap;
+
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
+        flex-direction: column;
+    }
+}
+
+.specialists__wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.specialists__subtitle {
+    margin: 0;
 }
 
 .specialists__number {

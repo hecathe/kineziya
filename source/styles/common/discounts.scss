@@ -46,14 +46,14 @@
     display: flex;
     column-gap: 20px;
 
-    @media (max-width: $laptop-width) {
+    @media (max-width: $laptop-width-l) {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 40px;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         width: 100%;
         position: relative;
         display: flex;
@@ -64,31 +64,29 @@
 }
 
 .discounts-list__item {
-    @media (max-width: $laptop-width) {
-        width: min-content;
-        justify-self: center;
+    @media (max-width: $tablet-width-xs) {
+        width: 100%;
     }
 }
 
 .discounts-list__img-wrap {
-    width: 325px;
+    max-width: 325px;
     height: 258px;
     border-radius: 10px;
     background-color: $color--header-col;
     margin-bottom: 20px;
 
-    @media (max-width: $laptop-width) {
-        width: 354px;
+    @media (max-width: $laptop-width-l) {
+        max-width: 100%;
         height: 281px;
     }
 
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
-        width: 320px;
         height: 254px;
     }
 
     @media (max-width: $mobile-width-s) {
-        width: 280px;
+        max-width: 280px;
         height: 214px;
     }
 }
@@ -97,7 +95,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
+    object-position: center bottom;
     border-radius: 10px;
 }
 

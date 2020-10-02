@@ -76,18 +76,24 @@
                 <ul class="gallery__list swiper-wrapper">
                   <li class="gallery__item swiper-slide">
                     <div class="gallery__img-wrap"><img class="gallery__img" src="app/images/g-image1.jpg" width="567" height="378" alt="Массажный кабинет"/></div>
-                    <h4 class="gallery__caption caption">Массажный кабинет</h4>
-                    <p class="gallery__desc">Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия</p>
+                    <div class="gallery__wrap">
+                      <h4 class="gallery__caption caption">Массажный кабинет</h4>
+                      <p class="gallery__desc">Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия</p>
+                    </div>
                   </li>
                   <li class="gallery__item swiper-slide">
                     <div class="gallery__img-wrap"><img class="gallery__img" src="app/images/g-image2.jpg" width="589" height="370" alt="Кабинет ЛФК"/></div>
-                    <h4 class="gallery__caption caption">Кабинет ЛФК</h4>
-                    <p class="gallery__desc">Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия</p>
+                    <div class="gallery__wrap">
+                      <h4 class="gallery__caption caption">Кабинет ЛФК</h4>
+                      <p class="gallery__desc">Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия</p>
+                    </div>
                   </li>
                   <li class="gallery__item swiper-slide">
                     <div class="gallery__img-wrap"><img class="gallery__img" src="app/images/g-image3.jpg" width="558" height="372" alt="Зал функциональных тренировок"/></div>
-                    <h4 class="gallery__caption caption">Зал функциональных тренировок</h4>
-                    <p class="gallery__desc">Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия</p>
+                    <div class="gallery__wrap">
+                      <h4 class="gallery__caption caption">Зал функциональных тренировок</h4>
+                      <p class="gallery__desc">Система клиники создана для того, чтобы нести людям качественную медицину для обеспечения здоровья, красоты и полноценного долголетия</p>
+                    </div>
                   </li>
                 </ul>
                 <div class="swiper-button-prev"></div>
@@ -97,7 +103,9 @@
           </section>
           <section class="specialists">
             <div class="specialists__container container">
-              <h2 class="specialists__subtitle subtitle">Наши специалисты</h2><span class="specialists__number">19</span>
+              <div class="specialists__wrap">
+                <h2 class="specialists__subtitle subtitle">Наши специалисты</h2><span class="specialists__number">19</span>
+              </div>
               <ul class="specialists-list">
                 <li class="specialists-list__item">
                   <div class="specialists-list__img-wrap"><img class="specialists-list__img" src="app/images/doc-image1.jpg" alt="Невролог-вертебролог"/></div>
@@ -260,7 +268,12 @@
                     <button class="contacts__button button button--background" type="submit">Отправить заявку</button>
                   </div>
                 </form>
-                <div class="contacts__map-wrap" id="map"></div>
+                <div class="contacts__map-wrap" id="map">
+                  <div class="contacts__map-ctrl" id="ymap-ctrl">
+                    <div class="contacts__map-info">Чтобы изменить масштаб, прокручивайте карту, удерживая клавишу Ctrl</div>
+                    <div class="contacts__map-info">Кликните для просмотра карты</div>
+                  </div>
+                </div>
                 <ul class="contacts__list contacts-list">
                   <li class="contacts-list__item">
                     <h4 class="contacts-list__caption">«Кинезия», центр движения </h4>

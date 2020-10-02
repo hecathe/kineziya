@@ -36,7 +36,7 @@ $color-darkgrey: rgba(0, 0, 0, 0.2);
 }
 //временно
 html {
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         overflow-x: hidden;
     }
 
@@ -173,7 +173,7 @@ button {
 }
 
 .subtitle {
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
         font-size: 30px;
         line-height: 100%;
     }
@@ -192,7 +192,7 @@ button {
 
     margin-top: 20px;
 
-    @media (min-width: $tablet-width) and (max-width: $laptop-width) {
+    @media (max-width: $laptop-width) {
         font-size: 20px;
     }
 

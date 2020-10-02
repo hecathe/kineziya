@@ -27,7 +27,7 @@
 
 @mixin list-img {
     position: relative;
-    width: 555px;
+    max-width: 555px;
     height: 370px;
     border-radius: 10px;
     overflow: hidden;

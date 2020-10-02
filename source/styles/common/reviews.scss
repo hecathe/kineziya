@@ -11,7 +11,7 @@
 .reviews__list {
     display: flex;
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         flex-direction: column;
         align-items: center;
         row-gap: 30px;
@@ -25,7 +25,7 @@
         width: auto;
     }
 
-    @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
+    @media (min-width: $mobile-width-s) and (max-width: $tablet-width-xs) {
         margin: 0;
     }
 }
@@ -34,17 +34,17 @@
     @include list-img;
 
     @media (max-width: $tablet-width) {
-        width: 435px;
+        max-width: 435px;
         height: 290px;
     }
 
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
-        width: 320px;
+        max-width: 320px;
         height: 213px;
     }
 
     @media (max-width: $mobile-width-s) {
-        width: 280px;
+        max-width: 280px;
         height: 173px;
     }
 }
@@ -52,7 +52,7 @@
 .reviews__img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     object-position: center;
     border-radius: 10px;
 }
@@ -141,7 +141,7 @@
         top: -55px;
     }
 
-    @media (max-width: $mobile-width-l) {
+    @media (max-width: $tablet-width-xs) {
         display: none;
     }
 }
@@ -154,8 +154,16 @@
         top: 21px;
     }
 
-    @media (max-width: $laptop-width) {
+    @media (max-width: $laptop-width-m) {
         left: 90%;
+    }
+
+    @media (min-width: $tablet-width-xs) and (max-width: $laptop-width) {
+        left: 89%;
+    }
+
+    @media (max-width: 840px) {
+        left: 85%;
     }
 }
 

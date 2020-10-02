@@ -198,7 +198,11 @@
         left: 52%;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: $mobile-width) and (max-width: $mobile-width-m) {
+        left: 52%;
+    }
+
+    @media (min-width: 340px) and (max-width: $mobile-width) {
         left: 50%;
     }
 
@@ -243,7 +247,7 @@
         left: 52%;
     }
 
-    @media (max-width: $mobile-width) {
+    @media (min-width: 344px) and (max-width: $mobile-width) {
         left: 50%;
     }
 

@@ -1,8 +1,16 @@
 .map {
     margin-top: 100px;
+
+    @media (max-width: $mobile-width-l) {
+        margin-top: 50px;
+    }
 }
 
 .map-table__link {
     @include nav-link;
     font-size: 36px;
+
+    @media (max-width: $mobile-width-l) {
+        font-size: 30px;
+    }
 }
