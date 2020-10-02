@@ -9,7 +9,9 @@ ymaps.ready(init);
             controls: ['smallMapDefaultSet']
         }),
 
-        myMap.behaviors.disable('scrollZoom');
+        myMap.behaviors
+            .disable('multitouch')
+            .disable('scrollZoom');
 
         myPlacemark = new ymaps.Placemark([59.964823, 30.326270], {
             balloonContentHeader: "«Кинезия»",
@@ -67,16 +69,6 @@ ymaps.ready(init);
             }
         };
         
-        /*myMap.events.once('click', function() {
-            var fade = document.querySelector('.contacts__map-ctrl');
-    
-            fade.classList.add('hide');
-    
-            myMap.behaviors
-                .enable(['scrollzoom'])
-                .enable(['multitouch']);
-        });*/
-
         myMap.events.add(['wheel', 'mousedown', 'click'], function(e) {
 
             if (screen.width <= 768) {
