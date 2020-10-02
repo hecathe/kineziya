@@ -67,12 +67,21 @@ ymaps.ready(init);
             }
         };
 
-        myMap.events.once('click', function() {
-            fadeOut('.contacts__map-ctrl');
+        function() {
             myMap.behaviors
-                .enable(['scrollzoom'])
-                .enable(['multitouch']);
-        });
+                .disable(['drag'])
+                .disable(['scrollzoom'])
+                .disable(['multitouch']);
+
+            myMap.events.once('click', function() {
+                fadeOut('.contacts__map-ctrl');
+                
+                myMap.behaviors
+                    .enable(['scrollzoom'])
+                    .enable(['multitouch']);
+            });
+        }
+        
 
         myMap.events.add(['wheel', 'mousedown'], function(e) {
 
