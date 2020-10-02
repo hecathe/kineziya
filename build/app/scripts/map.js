@@ -66,21 +66,6 @@ ymaps.ready(init);
                 document.body.style.overflow = 'scroll';
             }
         };
-
-        function() {
-            myMap.behaviors
-                .disable(['drag'])
-                .disable(['scrollzoom'])
-                .disable(['multitouch']);
-
-            myMap.events.once('click', function() {
-                fadeOut('.contacts__map-ctrl');
-                
-                myMap.behaviors
-                    .enable(['scrollzoom'])
-                    .enable(['multitouch']);
-            });
-        }
         
 
         myMap.events.add(['wheel', 'mousedown'], function(e) {
@@ -114,14 +99,14 @@ ymaps.ready(init);
                 ctrlKey = true;
                 myMap.behaviors.enable(['scrollZoom']);
             }
-        }
+        };
 
         function callbackUp(e){
             if(e.keyCode === 17){
                 ctrlKey = false;
                 myMap.behaviors.disable(['scrollZoom']);
             }
-        }
+        };
 
         /*document.addEventListener('keydown', function(event) {
             if(e.keyCode === 17 && !ctrlKey) {
@@ -135,6 +120,21 @@ ymaps.ready(init);
                 myMap.behaviors.disable('scrollZoom');
             }
         });*/
+
+        myMap.events.once('click', function() {
+            if(e.get('type') == 'click') {
+                fadeOut('.contacts__map-ctrl');
+
+                myMap.behaviors
+                    .enable(['scrollzoom'])
+                    .enable(['multitouch']);
+            } else {
+                myMap.behaviors
+                    .disable(['drag'])
+                    .disable(['scrollzoom'])
+                    .disable(['multitouch']);
+            }
+        });
     }
 
     
