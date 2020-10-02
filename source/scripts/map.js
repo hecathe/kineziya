@@ -122,18 +122,13 @@ ymaps.ready(init);
         });*/
 
         myMap.events.once('click', function() {
-            if(e.get('type') == 'click') {
-                fadeOut('.contacts__map-ctrl');
+            var fade = document.querySelector('.contacts__map-ctrl');
 
-                myMap.behaviors
-                    .enable(['scrollzoom'])
-                    .enable(['multitouch']);
-            } else {
-                myMap.behaviors
-                    .disable(['drag'])
-                    .disable(['scrollzoom'])
-                    .disable(['multitouch']);
-            }
+            fade.classList.add('hide');
+
+            myMap.behaviors
+                .enable(['scrollzoom'])
+                .enable(['multitouch']);
         });
     }
 

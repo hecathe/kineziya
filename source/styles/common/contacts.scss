@@ -248,6 +248,10 @@
 
     @media (max-width: $laptop-width) {
         display: block;
+
+        &.hide {
+            display: none;
+        }
     }
 }
 
