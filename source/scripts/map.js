@@ -66,6 +66,19 @@ ymaps.ready(init);
                 document.body.style.overflow = 'scroll';
             }
         };
+
+        if(screen.width <= 768) {
+            myMap.behaviors
+                .disable(['scrollzoom'])
+                .disable(['multitouch']);
+
+            myMap.events.once('click', function (event) {
+                fadeOut('.contacts__map-ctrl');
+                myMap.behaviors
+                    .enable(['scrollzoom'])
+                    .enable(['multitouch']);
+            });
+        }
         
         myMap.events.add(['wheel', 'mousedown'], function(e) {
             if(e.get('type') == 'wheel') {
