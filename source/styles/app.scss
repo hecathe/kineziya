@@ -36,7 +36,7 @@ $color-darkgrey: rgba(0, 0, 0, 0.2);
 }
 //временно
 html {
-    @media (max-width: $laptop-width) {
+    @media (max-width: 1024px) {
         overflow-x: hidden;
     }
 

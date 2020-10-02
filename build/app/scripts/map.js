@@ -67,26 +67,47 @@ ymaps.ready(init);
             }
         };
         
+        /*myMap.events.once('click', function() {
+            var fade = document.querySelector('.contacts__map-ctrl');
+    
+            fade.classList.add('hide');
+    
+            myMap.behaviors
+                .enable(['scrollzoom'])
+                .enable(['multitouch']);
+        });*/
 
-        myMap.events.add(['wheel', 'mousedown'], function(e) {
+        myMap.events.add(['wheel', 'mousedown', 'click'], function(e) {
 
-            if(e.get('type') == 'wheel') {
-                if(!ctrlKey) {
-                    fadeIn('.contacts__map-ctrl');
-                    ctrlMessVisibility = true;
-                    clearTimeout(timer);
-
-                    timer = setTimeout(function() {
+            if (screen.width <= 768) {
+                myMap.events.once('click', function() {
+                    var fade = document.querySelector('.contacts__map-ctrl');
+            
+                    fade.classList.add('hide');
+            
+                    myMap.behaviors
+                        .enable(['scrollzoom'])
+                        .enable(['multitouch']);
+                });
+            } else {
+                if(e.get('type') == 'wheel') {
+                    if(!ctrlKey) {
+                        fadeIn('.contacts__map-ctrl');
+                        ctrlMessVisibility = true;
+                        clearTimeout(timer);
+    
+                        timer = setTimeout(function() {
+                            fadeOut('.contacts__map-ctrl');
+                            ctrlMessVisibility = false;
+                        }, 1500);
+                    } else {
                         fadeOut('.contacts__map-ctrl');
-                        ctrlMessVisibility = false;
-                    }, 1500);
-                } else {
+                    }
+                }
+    
+                if(e.get('type') == 'mousedown' && ctrlMessVisibility) {
                     fadeOut('.contacts__map-ctrl');
                 }
-            }
-
-            if(e.get('type') == 'mousedown' && ctrlMessVisibility) {
-                fadeOut('.contacts__map-ctrl');
             }
         });
 
@@ -108,6 +129,40 @@ ymaps.ready(init);
             }
         };
 
+        /*myMap.events.once('click', function() {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                var fade = document.querySelector('.contacts__map-ctrl');
+            
+                    fade.classList.add('hide');
+            
+                    myMap.behaviors
+                        .enable(['scrollzoom'])
+                        .enable(['multitouch']);
+            } else {
+                myMap.behaviors
+                        .disable(['scrollzoom'])
+                        .disable(['multitouch']);
+            }
+        });*/
+        
+        /*function (event) {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                myMap.events.once('click', function() {
+                    var fade = document.querySelector('.contacts__map-ctrl');
+            
+                    fade.classList.add('hide');
+            
+                    myMap.behaviors
+                        .enable(['scrollzoom'])
+                        .enable(['multitouch']);
+                });
+            } else {
+                    myMap.behaviors
+                        .disable(['scrollzoom'])
+                        .disable(['multitouch']);
+            }
+        };*/
+
         /*document.addEventListener('keydown', function(event) {
             if(e.keyCode === 17 && !ctrlKey) {
                 ctrlKey = true;
@@ -121,15 +176,5 @@ ymaps.ready(init);
             }
         });*/
 
-        myMap.events.once('click', function() {
-            var fade = document.querySelector('.contacts__map-ctrl');
-
-            fade.classList.add('hide');
-
-            myMap.behaviors
-                .enable(['scrollzoom'])
-                .enable(['multitouch']);
-        });
+        
     }
-
-    
