@@ -9,7 +9,7 @@ ymaps.ready(init);
             controls: ['smallMapDefaultSet']
         }),
 
-        myMap.behaviors.disable('scrollZoom');
+        myMap.behaviors.disable(['scrollZoom', 'multiTouch']);
 
         myPlacemark = new ymaps.Placemark([59.964823, 30.326270], {
             balloonContentHeader: "«Кинезия»",
@@ -66,19 +66,6 @@ ymaps.ready(init);
                 document.body.style.overflow = 'scroll';
             }
         };
-
-        if(screen.width <= 768) {
-            myMap.behaviors
-                .disable(['scrollzoom'])
-                .disable(['multitouch']);
-
-            myMap.events.once('click', function (event) {
-                fadeOut('.contacts__map-ctrl');
-                myMap.behaviors
-                    .enable(['scrollzoom'])
-                    .enable(['multitouch']);
-            });
-        }
         
         myMap.events.add(['wheel', 'mousedown'], function(e) {
             if(e.get('type') == 'wheel') {
@@ -119,3 +106,22 @@ ymaps.ready(init);
             }
         };
     }
+
+    /*if(screen.width <= 768) {
+        myMap.behaviors.disable(['scrollZoom', 'multiTouch']);
+
+        myMap.events.once('click', function (event) {
+            var fade = document.querySelector('.contacts__map-ctrl');
+            fade.classList.add('hide');
+            myMap.behaviors.enable(['scrollZoom', 'multiTouch']);
+        });
+    };*/
+
+    /*myMap.events.once('click', function (event) {
+        if(screen.width <= 768) {
+            var fade = document.querySelector('.contacts__map-ctrl');
+            fade.classList.add('hide');
+            myMap.behaviors.enable(['scrollZoom', 'multiTouch']);
+        }
+    });*/
+    

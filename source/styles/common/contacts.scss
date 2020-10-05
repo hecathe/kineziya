@@ -340,7 +340,6 @@
     font-size: 20px;
     line-height: 125%;
     color: $color--black;
-    margin-bottom: 10px;
 
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         width: 147px;
@@ -357,6 +356,7 @@
     font-weight: 200;
     font-size: 16px;
     line-height: 150%;
+    margin-top: 10px;
 
     @media (min-width: $mobile-width-s) and (max-width: $mobile-width-l) {
         font-size: 14px;
