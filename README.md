@@ -1,2 +1,2 @@
-# kineziya демо https://hecathe.github.io/kineziya/build
+#Демо https://hecathe.github.io/kineziya/build
 
